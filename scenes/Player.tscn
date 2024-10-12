@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://crlgma5lhti8w"]
+
+[ext_resource type="Script" path="res://assets/scripts/character.gd" id="1_diema"]
+[ext_resource type="Texture2D" uid="uid://bee60ut74l2pu" path="res://assets/sprites/Pandora.png" id="2_is6vn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mfeh5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_is6vn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ql8yb"]
+radius = 4.0
+height = 16.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_diema")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mfeh5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ql8yb")
