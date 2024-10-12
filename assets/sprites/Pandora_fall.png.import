@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bee60ut74l2pu"
-path="res://.godot/imported/Pandora.png-9e3fbe9547ef2f2b24da863607b51973.ctex"
+uid="uid://c81co40g4y1b5"
+path="res://.godot/imported/Pandora_fall.png-0d0c47034105a66ca3a73b8bc3eefae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Pandora.png"
-dest_files=["res://.godot/imported/Pandora.png-9e3fbe9547ef2f2b24da863607b51973.ctex"]
+source_file="res://assets/sprites/Pandora_fall.png"
+dest_files=["res://.godot/imported/Pandora_fall.png-0d0c47034105a66ca3a73b8bc3eefae9.ctex"]
 
 [params]
 
