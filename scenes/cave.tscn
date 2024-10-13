@@ -31,8 +31,8 @@ size = Vector2(4.5, 48.625)
 motion_scale = Vector2(0.1, 0.1)
 
 [node name="Background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(170, -8)
-scale = Vector2(4.975, 4.2)
+position = Vector2(23, -8)
+scale = Vector2(4.05625, 4.2)
 texture = ExtResource("1_ht6ww")
 
 [node name="BigVine" parent="." instance=ExtResource("2_vu64c")]
@@ -46,7 +46,7 @@ position = Vector2(305, 132)
 position = Vector2(1, -9)
 
 [node name="Player" parent="." instance=ExtResource("3_afhki")]
-position = Vector2(250, 131)
+position = Vector2(-545, -163)
 
 [node name="Middleground" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
