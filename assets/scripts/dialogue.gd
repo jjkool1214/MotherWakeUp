@@ -33,7 +33,9 @@ func reset() -> void:
 	active_dialogue = {}
 	choice_1 = {}
 	choice_2 = {}
+	$AvatarFrame.visible = false
 	$Avatar.texture = null
+	$TextFrame.visible = false
 	$Text.visible_ratio = 0;
 	$Text.text = ""
 	$Choice1.disabled = true
@@ -57,11 +59,16 @@ func start_dialogue(key: String) -> bool:
 	for prereq in dialogue["prerequisites"]:
 		if prereq not in dialogue_history:
 			return false
+	
 	reset()
 	active_dialogue = dialogue
 	dialogue_history.append(key)
+	
+	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
+	$TextFrame.visible = true
 	set_text(dialogue["text"])
+	
 	if len(dialogue["choices"]) == 2:
 		choice_1 = dialogue["choices"]["first"]
 		choice_2 = dialogue["choices"]["second"]
@@ -71,6 +78,7 @@ func start_dialogue(key: String) -> bool:
 		$Choice2.disabled = false
 		$Choice2.visible = true
 		$Choice2.text = choice_2["text"]
+		
 	return true
 
 func set_text(text: String) -> void:
