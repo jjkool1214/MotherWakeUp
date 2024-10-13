@@ -33,5 +33,12 @@
 		"text": "To think that was taken 2 years ago. Mom looks so... different?",
 		"choices": {},
 		"next": ""
+	},
+	"picture": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "This used to be in the living room. I almost forgot what his uniform looked like.",
+		"choices": {},
+		"next": ""
 	}
 }
