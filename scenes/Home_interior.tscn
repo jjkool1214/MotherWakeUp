@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b852061abfwtl"]
 
-[ext_resource type="Texture2D" uid="uid://slf44x2r5u2n" path="res://assets/sprites/background/Home_Interior.PNG" id="1_y4meq"]
+[ext_resource type="Texture2D" uid="uid://slf44x2r5u2n" path="res://assets/sprites/physical/home/Home_Interior.PNG" id="1_y4meq"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="2_g8xok"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfgj0"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cve6d5od4d8kk"
-path="res://.godot/imported/land03.png-6b2a62ced8f00c02e198718d6dc44ba0.ctex"
+uid="uid://ccppfra8l2qi4"
+path="res://.godot/imported/street-bed.png-be27a6f4971ee483dcc5e45bd7cafdb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/land03.png"
-dest_files=["res://.godot/imported/land03.png-6b2a62ced8f00c02e198718d6dc44ba0.ctex"]
+source_file="res://assets/sprites/physical/world_objects/street-bed.png"
+dest_files=["res://.godot/imported/street-bed.png-be27a6f4971ee483dcc5e45bd7cafdb6.ctex"]
 
 [params]
 

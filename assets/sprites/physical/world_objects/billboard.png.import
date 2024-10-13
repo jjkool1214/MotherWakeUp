@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddlp4w2nnha0d"
-path="res://.godot/imported/Home_Exterior.png-2685981f3c5c27a5174d8442edd62ab9.ctex"
+uid="uid://dalftg67ep6gu"
+path="res://.godot/imported/billboard.png-07cff67f23e41acc013e10d0f81fdc61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/Home_Exterior.png"
-dest_files=["res://.godot/imported/Home_Exterior.png-2685981f3c5c27a5174d8442edd62ab9.ctex"]
+source_file="res://assets/sprites/physical/world_objects/billboard.png"
+dest_files=["res://.godot/imported/billboard.png-07cff67f23e41acc013e10d0f81fdc61.ctex"]
 
 [params]
 

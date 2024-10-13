@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://b53rs7gfmkxvd"]
 
-[ext_resource type="Texture2D" uid="uid://pl5j6aun2dil" path="res://assets/sprites/background/cave/cave_background.png" id="1_ht6ww"]
-[ext_resource type="Texture2D" uid="uid://ip86mt0swx68" path="res://assets/sprites/background/cave/cave_foreground.png" id="2_g1sn1"]
-[ext_resource type="Texture2D" uid="uid://dyxlumqrcug7o" path="res://assets/sprites/background/cave/cave_middleground.png" id="3_0fjby"]
+[ext_resource type="Texture2D" uid="uid://pl5j6aun2dil" path="res://assets/sprites/physical/cave/cave_background.png" id="1_ht6ww"]
+[ext_resource type="Texture2D" uid="uid://ip86mt0swx68" path="res://assets/sprites/physical/cave/cave_foreground.png" id="2_g1sn1"]
+[ext_resource type="Texture2D" uid="uid://dyxlumqrcug7o" path="res://assets/sprites/physical/cave/cave_middleground.png" id="3_0fjby"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_afhki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpwqc"]
