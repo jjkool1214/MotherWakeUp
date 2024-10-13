@@ -1,13 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/Background/background_stage1.png" id="1_ipgou"]
-[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
+[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
+[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
-[ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="7_4y064"]
 
 [node name="Exteriors" type="Node2D"]
