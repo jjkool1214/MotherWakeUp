@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=7 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
+[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/Background/background_stage1.png" id="1_ipgou"]
+[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
@@ -17,6 +18,17 @@ scale = Vector2(1.5, 1.5)
 
 [node name="Player" parent="." instance=ExtResource("3_fa37f")]
 position = Vector2(-211, 55)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Player"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+position = Vector2(-111, 105)
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer"]
+position = Vector2(295, 46.875)
+scale = Vector2(1.6125, 1.76806)
+texture = ExtResource("1_ipgou")
 
 [node name="LandHome" parent="." instance=ExtResource("4_q0e7q")]
 position = Vector2(-346, 79)

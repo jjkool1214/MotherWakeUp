@@ -78,7 +78,7 @@ zoom = Vector2(5, 5)
 process_callback = 0
 
 [node name="Dialogue" parent="Camera2D" instance=ExtResource("5_3fwv5")]
-position = Vector2(-4.54747e-13, 47.4614)
+position = Vector2(-4.54747e-13, 41.766)
 scale = Vector2(0.5, 0.307)
 
 [node name="Area2D" type="Area2D" parent="."]
