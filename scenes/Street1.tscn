@@ -708,6 +708,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d8jd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_velom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_velom")
 }],
 "loop": true,
 "name": &"default",
@@ -876,16 +882,20 @@ frame_progress = 0.980188
 position = Vector2(-145, -27)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_e1pn6")
-frame_progress = 0.729981
+autoplay = "default"
+frame = 15
+frame_progress = 0.274946
 
 [node name="Coffee Shop" type="AnimatedSprite2D" parent="."]
 position = Vector2(-26, -42)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_l46w8")
+autoplay = "default"
 frame_progress = 0.881167
 
 [node name="Holo Burger" type="AnimatedSprite2D" parent="."]
 position = Vector2(98, -48)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_gosfx")
+autoplay = "default"
 frame_progress = 0.580973
