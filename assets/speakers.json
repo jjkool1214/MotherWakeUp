@@ -31,4 +31,13 @@
 		"name": "James",
 		"avatar": "res://assets/sprites/characters/avatars/James_Portrait.PNG"
 	},
+	
+	"telephone" : {
+		"name": "Telephone",
+		"avatar": ""
+	},
+	"letter" : {
+		"name": "Letter",
+		"avatar": ""
+	}
 }

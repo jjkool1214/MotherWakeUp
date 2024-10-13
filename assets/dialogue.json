@@ -20,6 +20,171 @@
 		"choices": {},
 		"next": ""
 	},
+	
+	"scene1-call-1": {
+		"speaker": "telephone",
+		"prerequisites": [],
+		"text": "*ring* *ring* *ring*",
+		"choices": {},
+		"next": "scene1-call-2"
+	},
+	"scene1-call-2": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Hi, honey! How are you?",
+		"choices": {},
+		"next": "scene1-call-3"
+	},
+	"scene1-call-3": {
+		"speaker": "telephone",
+		"prerequisites": [],
+		"text": "...",
+		"choices": {},
+		"next": "scene1-call-4"
+	},
+	"scene1-call-4": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Awesome, is your army training going over well? I felt like it's been forever since you called. Your sister misses her brother very much, I can tell.",
+		"choices": {},
+		"next": "scene1-call-5"
+	},
+	"scene1-call-5": {
+		"speaker": "telephone",
+		"prerequisites": [],
+		"text": "...",
+		"choices": {},
+		"next": "scene1-call-6"
+	},
+	"scene1-call-6": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "That's a great idea, just let us know when you're back from base.",
+		"choices": {},
+		"next": "scene1-call-7"
+	},
+	"scene1-call-7": {
+		"speaker": "telephone",
+		"prerequisites": [],
+		"text": "...",
+		"choices": {},
+		"next": "scene1-call-8"
+	},
+	"scene1-call-8": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Well, what do you... mean? I thought you weren't chosen for that...",
+		"choices": {},
+		"next": "scene1-call-9"
+	},
+	"scene1-call-9": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Sweetie, are you sure you want to help? The Great War... it's really horrible right now.",
+		"choices": {},
+		"next": "scene1-call-10"
+	},
+	"scene1-call-10": {
+		"speaker": "telephone",
+		"prerequisites": [],
+		"text": "...",
+		"choices": {},
+		"next": "scene1-call-11"
+	},
+	"scene1-call-11": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Okay... yes... I trust you, I do. I just worry, that's all. you know me.",
+		"choices": {},
+		"next": "scene1-call-12"
+	},
+	"scene1-call-12": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Stay safe sweetie. I love you. Pandora loves you. Call us when you can.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-pasta-1": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Is the pasta okay? I tried to make it how you always do for me.",
+		"choices": {},
+		"next": "scene1-pasta-2"
+	},
+	"scene1-pasta-2": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Yeah, sweetie... it's just... nothing. I'm not too hungry right now.",
+		"choices": {},
+		"next": "scene1-pasta-3"
+	},
+	"scene1-pasta-3": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Well, okay.",
+		"choices": {},
+		"next": "scene1-pasta-4"
+	},
+	"scene1-pasta-4": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I thought your check wasn't going to come for two days? What's that?",
+		"choices": {},
+		"next": "scene1-pasta-5"
+	},
+	"scene1-pasta-5": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Oh, no... sweetie, that's just the bills. Boring mom stuff.",
+		"choices": {},
+		"next": "scene1-pasta-6"
+	},
+	"scene1-pasta-6": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Is it... too expensive?",
+		"choices": {},
+		"next": "scene1-pasta-7"
+	},
+	"scene1-pasta-7": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "No, no, no. I'm fine. We're fine.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-letter-1": {
+		"speaker": "letter",
+		"prerequisites": [],
+		"text": "TO WHOM IT MAY CONCERN",
+		"choices": {},
+		"next": "scene1-letter-2"
+	},
+	"scene1-letter-2": {
+		"speaker": "letter",
+		"prerequisites": [],
+		"text": "I REGRET TO INFORM YOU THAT SOLDIER NO. 87629 DIED IN BATTLE AT APPROXIMATELY 1100 HOURS.",
+		"choices": {},
+		"next": "scene1-pasta-3"
+	},
+	"scene1-letter-3": {
+		"speaker": "letter",
+		"prerequisites": [],
+		"text": "WE THANK HIM FOR HIS SERVICE, AND WE HOPE YOU CAN FIND PEACE IN HIS ABSENCE.",
+		"choices": {},
+		"next": "scene1-letter-4"
+	},
+	"scene1-letter-4": {
+		"speaker": "letter",
+		"prerequisites": [],
+		"text": "SIGNED, ARMY BASE NO. 43, POLARIS DEPARTMENT OF DEFENSE",
+		"choices": {},
+		"next": "scene1-letter-5"
+	},
+	
 	"fridge": {
 		"speaker": "pandora",
 		"prerequisites": [],
@@ -34,18 +199,126 @@
 		"choices": {},
 		"next": ""
 	},
-<<<<<<< HEAD
-	"dont-jump": {
-		"speaker": "pandora",
-		"prerequisites": [],
-		"text": "That's not a way to go out...",
-=======
 	"picture": {
 		"speaker": "pandora",
 		"prerequisites": [],
 		"text": "This used to be in the living room. I almost forgot what his uniform looked like.",
->>>>>>> 32e85cdbcb343fda2eee129acef51419a63b48cd
 		"choices": {},
 		"next": ""
-	}
+	},
+	"flag": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "...is that what my brother fought for?",
+		"choices": {},
+		"next": ""
+	},
+	"must-check-in-mom": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "I think I should check in with Mother before I leave...",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-mother-1": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Hi mom, are you okay today? Is it getting any better?",
+		"choices": {},
+		"next": "scene1-mother-2"
+	},
+	"scene1-mother-2": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "(murmurs)",
+		"choices": {},
+		"next": "scene1-mother-3"
+	},
+	"scene1-mother-3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Have you been trying those breathing exercises we learned a few weeks ago? They said it really helps.",
+		"choices": {},
+		"next": "scene1-mother-4"
+	},
+	"scene1-mother-4": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "... do you want some breakfast?",
+		"choices": {},
+		"next": "scene1-mother-5"
+	},
+	"scene1-mother-5": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "Hm? Did you say something?",
+		"choices": {},
+		"next": "scene1-mother-6"
+	},
+	"scene1-mother-6": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Mom... I'm worried for you.",
+		"choices": {},
+		"next": "scene1-mother-7"
+	},
+	"scene1-mother-7": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Please, let me help you.",
+		"choices": {},
+		"next": "scene1-mother-8"
+	},
+	"scene1-mother-8": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "(murmurs)",
+		"choices": {},
+		"next": "scene1-mother-9"
+	},
+	"scene1-mother-9": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Well, in case you forgot, you still have another child. If you need me, I'll be at the deli.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"mother-bookshelf-1": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I remembered when she'd be so excited to read me bedtime stories.",
+		"choices": {},
+		"next": "mother-bookshelf-2"
+	},
+	"mother-bookshelf-2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I kinda miss them.",
+		"choices": {},
+		"next": ""
+	},
+	"mother-bed": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I hope she's been sleeping okay. Not that she's been working anyway...",
+		"choices": {},
+		"next": ""
+	},
+	"mother-picture": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "This used to be in the living room. I almost forgot what his uniform looked like.",
+		"choices": {},
+		"next": ""
+	},
+
+	"dont-jump": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "That's not a way to go out...",
+		"choices": {},
+		"next": ""
+	},
 }
