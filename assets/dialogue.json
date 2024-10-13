@@ -1,8 +1,39 @@
 {
-	"test": {
+	"test-0": {
 		"speaker": "pandora",
 		"prerequisites": [],
+		"text": "First message!",
+		"choices": {},
+		"next": "test-1"
+	},
+	"test-1": {
+		"speaker": "pandora",
+		"prerequisites": ["test-0"],
 		"text": "This is a test message!",
-		"choices": []
+		"choices": {
+			"first": {
+				"text": "Okay",
+				"dialogue": "test-okay"
+			},
+			"second": {
+				"text": "No",
+				"dialogue": "test-no"
+			}
+		},
+		"next": ""
+	},
+	"test-okay": {
+		"speaker": "pandora",
+		"prerequisites": ["test-1"],
+		"text": "Perfect!",
+		"choices": {},
+		"next": ""
+	},
+	"test-no": {
+		"speaker": "pandora",
+		"prerequisites": ["test-1"],
+		"text": "You suck bruh",
+		"choices": {},
+		"next": ""
 	}
 }

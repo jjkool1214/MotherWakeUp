@@ -1,5 +1,6 @@
 {
 	"pandora": {
-		"name": "Pandora"
+		"name": "Pandora",
+		"avatar": "res://assets/sprites/characters/Pandora/Pandora_idle.png"
 	}
 }
