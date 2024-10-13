@@ -1,7 +1,7 @@
 {
 	"pandora": {
 		"name": "Pandora",
-		"avatar": "res://assets/sprites/characters/Pandora/Pandora_idle.png"
+		"avatar": "res://assets/sprites/characters/avatars/Pandora.PNG"
 	},
 	"mother": {
 		"name": "Mother",
@@ -9,15 +9,15 @@
 	},
 	"sydney": {
 		"name": "Sydney",
-		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+		"avatar": "res://assets/sprites/characters/avatars/Sydney_Portrait.PNG"
 	},
 	"ryan": {
 		"name": "Ryan",
-		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+		"avatar": "res://assets/sprites/characters/avatars/Ryan_Portrait.PNG"
 	},
 	"richard": {
 		"name": "Richard",
-		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+		"avatar": "res://assets/sprites/characters/avatars/Richard_Portrait.PNG"
 	},
 	"julie": {
 		"name": "Julie",

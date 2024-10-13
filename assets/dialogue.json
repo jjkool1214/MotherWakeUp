@@ -312,7 +312,117 @@
 		"choices": {},
 		"next": ""
 	},
-
+	
+	"scene1-outside-home": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I need to get to work at the deli. How else will we survive?",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-home-window": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Hopefully she won't miss me too much...",
+		"choices": {},
+		"next": "scene1-outside-home-window-2"
+	},
+	"scene1-outside-home-window-2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Deep down, she probably won't anyway.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-banner": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "'THE GREAT WAR DEATH TOLL RISES TO 500,000'... what? Already? Why can't Polaris just call it quits?",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-bank": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I just hope we never need to exhaust our savings. The deli is probably wondering where I am...",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-fast-food-door": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "If only I had time to stop for a bite. Mom used to love this place so much.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-homeless-guy": {
+		"speaker": "jenkins",
+		"prerequisites": [],
+		"text": "Hey, can ya spare any change? Please, anything...",
+		"choices": {
+			"first": { 
+				"dialogue" : "scene1-outside-homeless-guy-gift",
+				"text": "Spare $5",
+			},
+			"second": {
+				"dialogue": "",
+				"text": "Keep it for yourself",
+			},
+		},
+		"next": ""
+	},
+	"scene1-outside-homeless-guy-gift": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "It's your lucky day, sir. Is this enough for breakfast?",
+		"choices": {},
+		"next": "scene1-outside-homeless-guy-gift2"
+	},
+	"scene1-outside-homeless-guy-gift2": {
+		"speaker": "jenkins",
+		"prerequisites": [],
+		"text": "Gee, thank ya. It'll be money well spent.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-homeless-guy-deny": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I'm sorry sir. Not today, maybe tomorrow, though?",
+		"choices": {},
+		"next": "scene1-outside-homeless-guy-deny2"
+	},
+	"scene1-outside-homeless-guy-deny2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Gee, I understand. Take care...",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-outside-businessman": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Out of the way please, got places to be! Places to be!",
+		"choices": {},
+		"next": "scene1-outside-businessman2"
+	},
+	"scene1-outside-businessman2": {
+		"speaker": "richard",
+		"prerequisites": [],
+		"text": "Wow, some people are just always in a rush.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-ryans-home": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "",
+		"choices": {},
+		"next": ""
+	},
+	
 	"dont-jump": {
 		"speaker": "pandora",
 		"prerequisites": [],
