@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kd01hnl2wrap"
-path="res://.godot/imported/background_stage1.png-42d126ae20ee3c6769ae1cd2535747de.ctex"
+uid="uid://341tkkfie12t"
+path="res://.godot/imported/ryan_s-deli.png-3eaa020607f3ffd6ebd7be03d864dc68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/background_stage1.png"
-dest_files=["res://.godot/imported/background_stage1.png-42d126ae20ee3c6769ae1cd2535747de.ctex"]
+source_file="res://assets/sprites/background/Deli Scenes/ryan_s-deli.png"
+dest_files=["res://.godot/imported/ryan_s-deli.png-3eaa020607f3ffd6ebd7be03d864dc68.ctex"]
 
 [params]
 
