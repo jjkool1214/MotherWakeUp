@@ -1,10 +1,9 @@
-[gd_scene load_steps=128 format=3 uid="uid://davsifgg8iff6"]
+[gd_scene load_steps=127 format=3 uid="uid://davsifgg8iff6"]
 
 [ext_resource type="Texture2D" uid="uid://lecwodj3kp18" path="res://assets/sprites/physical/street1/bank.png" id="1_hy0gj"]
 [ext_resource type="Texture2D" uid="uid://dalftg67ep6gu" path="res://assets/sprites/physical/world_objects/billboard.png" id="1_sbsbx"]
 [ext_resource type="Texture2D" uid="uid://b0dmqytnxj2c0" path="res://assets/sprites/physical/street1/coffee-shop.png" id="2_ejro6"]
 [ext_resource type="Texture2D" uid="uid://d3vbn1fpx48dy" path="res://assets/sprites/physical/street1/holo-burger.png" id="3_lawfx"]
-[ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_vwovw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l45mq"]
 atlas = ExtResource("1_sbsbx")
@@ -868,25 +867,25 @@ animations = [{
 position = Vector2(370, 226)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(2, -21)
+position = Vector2(-23, -53)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_bm8tt")
 frame_progress = 0.980188
 
 [node name="Bank" type="AnimatedSprite2D" parent="."]
-position = Vector2(-79, -8)
+position = Vector2(-145, -27)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_e1pn6")
 frame_progress = 0.729981
 
 [node name="Coffee Shop" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -18)
+position = Vector2(-26, -42)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_l46w8")
 frame_progress = 0.881167
 
 [node name="Holo Burger" type="AnimatedSprite2D" parent="."]
-position = Vector2(83, -20)
+position = Vector2(98, -48)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_gosfx")
 frame_progress = 0.580973
-
-[node name="land" parent="." instance=ExtResource("5_vwovw")]
-position = Vector2(41, 81)
-scale = Vector2(2, 2)

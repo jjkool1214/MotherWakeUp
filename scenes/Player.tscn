@@ -69,11 +69,11 @@ scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_mio30")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-3.8147e-06, -46)
+position = Vector2(4.54747e-13, -18)
 scale = Vector2(0.970436, 1.58023)
-zoom = Vector2(4, 4)
+zoom = Vector2(5, 5)
 process_callback = 0
 
 [node name="Dialogue" parent="Camera2D" instance=ExtResource("5_3fwv5")]
-position = Vector2(3.93391e-06, 56.9537)
+position = Vector2(-4.54747e-13, 47.4614)
 scale = Vector2(0.5, 0.307)
