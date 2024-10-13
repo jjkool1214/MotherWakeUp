@@ -1,18 +1,13 @@
 extends CharacterBody2D
 
-class_name Player
-
 const SPEED = 50.0
 
 func _ready():
 	if not Game.enter_door_target_position == Vector2.ZERO:
 		global_position = Game.enter_door_target_position
 		Game.enter_door_target_position = Vector2.ZERO
-		
-	$Camera2D/Dialogue.start_dialogue("test-0")
 
 func _physics_process(delta):
-
 	var direction = Input.get_axis("left", "right")
 	
 	if direction:

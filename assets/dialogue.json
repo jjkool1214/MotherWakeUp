@@ -1,38 +1,36 @@
 {
-	"test-0": {
+	"intro-birthday": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "I know it's your birthday coming up, sweetie, are you super excited?",
+		"choices": {},
+		"next": "intro-day-off"	
+	},
+	"intro-day-off": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "First message!",
+		"text": "Of course, mom, did you manage to get the day off from the deli?",
 		"choices": {},
-		"next": "test-1"
+		"next": "intro-extra-gift"
 	},
-	"test-1": {
-		"speaker": "pandora",
-		"prerequisites": ["test-0"],
-		"text": "This is a test message!",
-		"choices": {
-			"first": {
-				"text": "Okay",
-				"dialogue": "test-okay"
-			},
-			"second": {
-				"text": "No",
-				"dialogue": "test-no"
-			}
-		},
-		"next": ""
-	},
-	"test-okay": {
-		"speaker": "pandora",
-		"prerequisites": ["test-1"],
-		"text": "Perfect!",
+	"intro-extra-gift": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "No, sweetie, don't worry about me. It just means you'll have an extra awesome gift this year!",
 		"choices": {},
 		"next": ""
 	},
-	"test-no": {
+	"fridge": {
 		"speaker": "pandora",
-		"prerequisites": ["test-1"],
-		"text": "You suck bruh",
+		"prerequisites": [],
+		"text": "Hmm... I wonder what kind of breakfast day it is.",
+		"choices": {},
+		"next": ""
+	},
+	"portrait": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "To think that was taken 2 years ago. Mom looks so... different?",
 		"choices": {},
 		"next": ""
 	}
