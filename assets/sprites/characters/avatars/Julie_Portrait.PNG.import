@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x3qmyqoo2xf4"
-path="res://.godot/imported/Mother_2.PNG-c54b207290b6c5c845bfbf4d6329045d.ctex"
+uid="uid://chjo8t3yp0co"
+path="res://.godot/imported/Julie_Portrait.PNG-8930a18106789854a6b01a6e6209731a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/Close-ups/Mother_2.PNG"
-dest_files=["res://.godot/imported/Mother_2.PNG-c54b207290b6c5c845bfbf4d6329045d.ctex"]
+source_file="res://assets/sprites/characters/avatars/Julie_Portrait.PNG"
+dest_files=["res://.godot/imported/Julie_Portrait.PNG-8930a18106789854a6b01a6e6209731a.ctex"]
 
 [params]
 

@@ -33,5 +33,12 @@
 		"text": "To think that was taken 2 years ago. Mom looks so... different?",
 		"choices": {},
 		"next": ""
+	},
+	"dont-jump": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "That's not a way to go out...",
+		"choices": {},
+		"next": ""
 	}
 }

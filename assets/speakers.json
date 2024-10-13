@@ -2,5 +2,33 @@
 	"pandora": {
 		"name": "Pandora",
 		"avatar": "res://assets/sprites/characters/Pandora/Pandora_idle.png"
-	}
+	},
+	"mother": {
+		"name": "Mother",
+		"avatar": "res://assets/sprites/characters/avatars/Mother_1.PNG"
+	},
+	"sydney": {
+		"name": "Sydney",
+		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+	},
+	"ryan": {
+		"name": "Ryan",
+		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+	},
+	"richard": {
+		"name": "Richard",
+		"avatar": "res://assets/sprites/characters/avatars/James_Portrait_1.PNG"
+	},
+	"julie": {
+		"name": "Julie",
+		"avatar": "res://assets/sprites/characters/avatars/Julie_Portrait.PNG"
+	},
+	"jenkins": {
+		"name": "Jenkins",
+		"avatar": "res://assets/sprites/characters/avatars/Jenkins_Portrait.PNG"
+	},
+	"james": {
+		"name": "James",
+		"avatar": "res://assets/sprites/characters/avatars/James_Portrait.PNG"
+	},
 }
