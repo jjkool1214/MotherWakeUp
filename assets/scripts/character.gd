@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 50.0
 
 func _ready():
-	$Camera2D/Dialogue.start_dialogue("test")
+	$Camera2D/Dialogue.start_dialogue("test-0")
 
 func _physics_process(delta):
 
