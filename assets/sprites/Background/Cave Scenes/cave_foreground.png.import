@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kd01hnl2wrap"
-path="res://.godot/imported/background_stage1.png-42d126ae20ee3c6769ae1cd2535747de.ctex"
+uid="uid://1dcakgiw04kd"
+path="res://.godot/imported/cave_foreground.png-58a36274e91f095b3df59315256e6f02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/background_stage1.png"
-dest_files=["res://.godot/imported/background_stage1.png-42d126ae20ee3c6769ae1cd2535747de.ctex"]
+source_file="res://assets/sprites/background/Cave Scenes/cave_foreground.png"
+dest_files=["res://.godot/imported/cave_foreground.png-58a36274e91f095b3df59315256e6f02.ctex"]
 
 [params]
 
