@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
+[ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://bal2l4ts86q2y" path="res://scenes/Land02.tscn" id="5_77cma"]
@@ -12,10 +12,10 @@ position = Vector2(13, 8)
 scale = Vector2(1.5, 1.5)
 
 [node name="Player" parent="." instance=ExtResource("3_fa37f")]
-position = Vector2(0, 33)
+position = Vector2(-42, 33)
 
 [node name="Land01" parent="." instance=ExtResource("4_q0e7q")]
-position = Vector2(14, 79)
+position = Vector2(6, 54)
 
 [node name="Land02" parent="." instance=ExtResource("5_77cma")]
 position = Vector2(-370, 84)

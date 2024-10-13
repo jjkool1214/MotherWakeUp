@@ -1,12 +1,9 @@
 extends Sprite2D
 
+var entered = false
+
 func _ready():
-	pass
+	set_process_input(true)
 
 func _process(delta):
 	pass
-
-func _on_button_pressed():
-	var distance = $"../Player".global_position - $".".global_position
-	if (distance.x < 30):
-		get_tree().change_scene_to_file("res://scenes/HomeInterior.tscn")
