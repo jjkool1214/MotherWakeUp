@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 Transition="*res://scenes/Transition.tscn"
 Game="*res://assets/scripts/game.gd"
+Dialogue="*res://scenes/Dialogue.tscn"
 
 [display]
 

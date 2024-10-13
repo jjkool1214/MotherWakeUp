@@ -84,7 +84,7 @@ func start_dialogue(key: String) -> bool:
 func set_text(text: String) -> void:
 	$Text.text = text
 	var tween: Tween = create_tween()
-	tween.tween_property($Text, "visible_ratio", 1.0, 1)
+	tween.tween_property($Text, "visible_ratio", 1.0, 2)
 
 func _on_choice_1_pressed() -> void:
 	if choice_1.is_empty():
