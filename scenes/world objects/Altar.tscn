@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://bdmcyflbpeblu"]
+
+[ext_resource type="Texture2D" uid="uid://xkppwaoy8i3r" path="res://assets/sprites/physical/world_objects/altar.png" id="1_30gfp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_neevo"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ddiu"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1atf"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s75bi"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgemw"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efeyr"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iya6d"]
+atlas = ExtResource("1_30gfp")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cuj01"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_8ddiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1atf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s75bi")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_cgemw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efeyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iya6d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Altar" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_neevo")
+position = Vector2(0, -1)
+amount = 13
+randomness = 0.71
+spread = 180.0
+gravity = Vector2(0, -100)
+initial_velocity_max = 27.78
+scale_amount_max = 7.0
+color = Color(0.229885, 0.424035, 0.342362, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_cuj01")
+autoplay = "default"
+frame_progress = 0.140678

@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://b53rs7gfmkxvd"]
+[gd_scene load_steps=13 format=3 uid="uid://b53rs7gfmkxvd"]
 
 [ext_resource type="Texture2D" uid="uid://pl5j6aun2dil" path="res://assets/sprites/physical/cave/cave_background.png" id="1_ht6ww"]
 [ext_resource type="Texture2D" uid="uid://ip86mt0swx68" path="res://assets/sprites/physical/cave/cave_foreground.png" id="2_g1sn1"]
+[ext_resource type="PackedScene" uid="uid://chbn3e51s5r2e" path="res://scenes/world objects/Vine.tscn" id="2_vu64c"]
 [ext_resource type="Texture2D" uid="uid://dyxlumqrcug7o" path="res://assets/sprites/physical/cave/cave_middleground.png" id="3_0fjby"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_afhki"]
+[ext_resource type="PackedScene" uid="uid://bdmcyflbpeblu" path="res://scenes/world objects/Altar.tscn" id="6_x5s77"]
+[ext_resource type="PackedScene" uid="uid://kmj38ectyjts" path="res://scenes/world objects/Unakite.tscn" id="7_ydbd0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpwqc"]
 size = Vector2(168, 4.5)
@@ -22,41 +25,60 @@ size = Vector2(4.5, 48.625)
 
 [node name="Cave" type="Node2D"]
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1, 0)
-scale = Vector2(4, 4)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(23, -8)
+scale = Vector2(4.05625, 4.2)
 texture = ExtResource("1_ht6ww")
 
+[node name="BigVine" parent="." instance=ExtResource("2_vu64c")]
+position = Vector2(541, -15)
+scale = Vector2(4, 4)
+
+[node name="Altar" parent="." instance=ExtResource("6_x5s77")]
+position = Vector2(305, 132)
+
+[node name="unakite" parent="Altar" instance=ExtResource("7_ydbd0")]
+position = Vector2(1, -9)
+
 [node name="Player" parent="." instance=ExtResource("3_afhki")]
-position = Vector2(-540, -143)
-scale = Vector2(1.5, 1.5)
+position = Vector2(-545, -163)
 
 [node name="Middleground" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
 texture = ExtResource("3_0fjby")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="COLLISIONS" type="StaticBody2D" parent="."]
 scale = Vector2(4, 4)
 
-[node name="Foreground" type="Sprite2D" parent="StaticBody2D"]
+[node name="Foreground" type="Sprite2D" parent="COLLISIONS"]
 texture = ExtResource("2_g1sn1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="COLLISIONS"]
 position = Vector2(-75.75, 38)
 shape = SubResource("RectangleShape2D_vpwqc")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="COLLISIONS"]
 position = Vector2(77.75, 39.75)
 shape = SubResource("RectangleShape2D_g1suo")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="COLLISIONS"]
 position = Vector2(153.5, 12.75)
 shape = SubResource("RectangleShape2D_phan6")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="COLLISIONS"]
 position = Vector2(-149.5, -4.625)
 shape = SubResource("RectangleShape2D_i2s8i")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="COLLISIONS"]
 position = Vector2(-112.25, -21.1875)
 shape = SubResource("RectangleShape2D_vo8qg")
+
+[node name="SmallVine" parent="." instance=ExtResource("2_vu64c")]
+position = Vector2(-64, -55)
+rotation = 3.14159
+scale = Vector2(2.5, 2.5)

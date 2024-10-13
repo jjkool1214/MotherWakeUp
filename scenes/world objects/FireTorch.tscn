@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cde8e4lvbc83h"]
+
+[ext_resource type="Texture2D" uid="uid://bbxva5mft5sao" path="res://assets/sprites/physical/world_objects/fire_torch.png" id="1_coag2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luv8v"]
+atlas = ExtResource("1_coag2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vgou"]
+atlas = ExtResource("1_coag2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_io3p4"]
+atlas = ExtResource("1_coag2")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p7k3w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luv8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vgou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_io3p4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FireTorch" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p7k3w")
+autoplay = "default"
