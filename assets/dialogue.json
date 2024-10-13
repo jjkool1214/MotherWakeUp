@@ -3,6 +3,27 @@
 		"speaker": "pandora",
 		"prerequisites": [],
 		"text": "This is a test message!",
-		"choices": []
+		"choices": {
+			"first": {
+				"text": "Okay",
+				"dialogue": "test-okay"
+			},
+			"second": {
+				"text": "No",
+				"dialogue": "test-no"
+			}
+		}
+	},
+	"test-okay": {
+		"speaker": "pandora",
+		"prerequisites": ["test"],
+		"text": "Perfect!",
+		"choices": {}
+	},
+	"test-no": {
+		"speaker": "pandora",
+		"prerequisites": ["test"],
+		"text": "You suck bruh",
+		"choices": {}
 	}
 }

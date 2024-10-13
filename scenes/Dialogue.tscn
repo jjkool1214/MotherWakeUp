@@ -1,23 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3ewxa1qc8ckc"]
+[gd_scene load_steps=3 format=3 uid="uid://b3ewxa1qc8ckc"]
 
 [ext_resource type="Script" path="res://assets/scripts/dialogue.gd" id="1_qq3t6"]
+[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="2_yi2l8"]
 
 [node name="Dialogue" type="Node2D"]
+z_index = 999
 script = ExtResource("1_qq3t6")
 
 [node name="Text" type="Label" parent="."]
 z_index = 999
-offset_left = -282.0
-offset_top = -24.0
-offset_right = 283.0
-offset_bottom = 25.0
-text = "TEXT
-MORE TEXT"
+offset_left = -228.0
+offset_top = -25.0
+offset_right = 228.0
+offset_bottom = 24.0
+text = "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Avatar" type="Sprite2D" parent="."]
+position = Vector2(-270, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("2_yi2l8")
 
 [node name="Frame" type="Sprite2D" parent="."]
 
@@ -35,3 +39,6 @@ offset_right = 148.0
 offset_bottom = 59.0
 text = "CHOICE TWO
 "
+
+[connection signal="pressed" from="Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="Choice2" to="." method="_on_choice_2_pressed"]

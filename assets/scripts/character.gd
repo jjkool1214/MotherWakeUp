@@ -2,6 +2,9 @@ extends CharacterBody2D
 
 const SPEED = 50.0
 
+func _ready():
+	$Camera2D/Dialogue.start_dialogue("test")
+
 func _physics_process(delta):
 
 	var direction = Input.get_axis("left", "right")
