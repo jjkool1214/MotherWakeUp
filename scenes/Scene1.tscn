@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpbw1acmlncam"]
+
+[ext_resource type="Texture2D" uid="uid://ddlp4w2nnha0d" path="res://assets/sprites/background/Home_Exterior.png" id="1_6gji4"]
+[ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="2_56jjx"]
+[ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="3_pcsr3"]
+[ext_resource type="PackedScene" uid="uid://bal2l4ts86q2y" path="res://scenes/Land02.tscn" id="4_a05f1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, 8)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_6gji4")
+
+[node name="Player" parent="." instance=ExtResource("2_56jjx")]
+position = Vector2(-74, 30)
+scale = Vector2(1.5, 1.5)
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2(-0.666672, -46)
+scale = Vector2(0.970436, 1.58023)
+zoom = Vector2(5, 5)
+process_callback = 0
+position_smoothing_enabled = true
+
+[node name="Land1" parent="." instance=ExtResource("3_pcsr3")]
+position = Vector2(14, 79)
+
+[node name="Land02" parent="." instance=ExtResource("4_a05f1")]
+position = Vector2(-370, 84)

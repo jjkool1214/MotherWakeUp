@@ -23,3 +23,13 @@ func _physics_process(delta):
 	
 
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	$"../Home/Area2D/DoorInput".text = "You can enter BITCH BOT"
+	print("shit yourself")
+	
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	$"../Home/Area2D/DoorInput".text = ""
+	print("shit yourself")

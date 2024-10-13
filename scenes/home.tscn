@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbh6gp6l0456b"]
+[gd_scene load_steps=3 format=3 uid="uid://cvgba3sx5xu3l"]
 
 [ext_resource type="Texture2D" uid="uid://ddlp4w2nnha0d" path="res://assets/sprites/background/Home_Exterior.png" id="1_3yypw"]
 [ext_resource type="Script" path="res://assets/scripts/home.gd" id="2_lwskm"]
