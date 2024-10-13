@@ -1,30 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://pybm2h7deovi"]
+[gd_scene load_steps=3 format=3 uid="uid://pybm2h7deovi"]
 
 [ext_resource type="Texture2D" uid="uid://cve6d5od4d8kk" path="res://assets/sprites/physical/land03.png" id="1_foxp2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kqv1k"]
-size = Vector2(256, 4.33333)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m73yl"]
-atlas = ExtResource("1_foxp2")
-region = Rect2(0, 0, 256, 60)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_gkdfk"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m73yl")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+size = Vector2(768, 3)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -25.5)
+position = Vector2(0, -82.5)
 shape = SubResource("RectangleShape2D_kqv1k")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_gkdfk")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_foxp2")
