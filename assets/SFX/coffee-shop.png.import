@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfuqyhjpmbl0t"
-path="res://.godot/imported/Mother_4.PNG-fe3044655ea637b17af2cd88ce314049.ctex"
+uid="uid://db7d1puce7fdh"
+path="res://.godot/imported/coffee-shop.png-3ddf72fe73dca804a202252c530c1ecd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/Close-ups/Mother_4.PNG"
-dest_files=["res://.godot/imported/Mother_4.PNG-fe3044655ea637b17af2cd88ce314049.ctex"]
+source_file="res://assets/SFX/coffee-shop.png"
+dest_files=["res://.godot/imported/coffee-shop.png-3ddf72fe73dca804a202252c530c1ecd.ctex"]
 
 [params]
 

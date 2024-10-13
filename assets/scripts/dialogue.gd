@@ -25,6 +25,7 @@ func _process(delta: float) -> void:
 	
 	if active_dialogue["next"].is_empty():
 		reset()
+		Game.freeze_player = false
 		return
 	
 	start_dialogue(active_dialogue["next"])
@@ -36,6 +37,7 @@ func reset() -> void:
 	$AvatarFrame.visible = false
 	$Avatar.texture = null
 	$TextFrame.visible = false
+	$ButtonHint.visible = false
 	$Text.visible_ratio = 0;
 	$Text.text = ""
 	$Choice1.disabled = true
@@ -61,12 +63,14 @@ func start_dialogue(key: String) -> bool:
 			return false
 	
 	reset()
+	Game.freeze_player = true
 	active_dialogue = dialogue
 	dialogue_history.append(key)
 	
 	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
 	$TextFrame.visible = true
+	$ButtonHint.visible = true
 	set_text(dialogue["text"])
 	
 	if len(dialogue["choices"]) == 2:

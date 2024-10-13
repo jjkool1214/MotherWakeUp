@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=11 format=3 uid="uid://b8b2oa4h50baa"]
 
 [ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
@@ -8,6 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
 [ext_resource type="PackedScene" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
+[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
+size = Vector2(3.5, 20)
 
 [node name="Exteriors" type="Node2D"]
 
@@ -44,5 +48,26 @@ position = Vector2(-346, 79)
 [node name="LandStreet1" parent="." instance=ExtResource("5_heubk")]
 position = Vector2(229, 154)
 
-[node name="StaticBody2D" parent="." instance=ExtResource("5_heubk")]
+[node name="LandStreet2" parent="." instance=ExtResource("5_heubk")]
 position = Vector2(976, 154)
+
+[node name="Right Barrier" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Barrier"]
+position = Vector2(-530.75, 57)
+shape = SubResource("RectangleShape2D_qkh6a")
+
+[node name="Interactable" parent="Right Barrier" instance=ExtResource("9_d12ox")]
+position = Vector2(-533, 57)
+dialogue_key = "dont-jump"
+
+[node name="Left Barrier" type="StaticBody2D" parent="."]
+position = Vector2(1889, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Barrier"]
+position = Vector2(-530.75, 57)
+shape = SubResource("RectangleShape2D_qkh6a")
+
+[node name="Interactable" parent="Left Barrier" instance=ExtResource("9_d12ox")]
+position = Vector2(-528, 57)
+dialogue_key = "dont-jump"

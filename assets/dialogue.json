@@ -33,5 +33,19 @@
 		"text": "To think that was taken 2 years ago. Mom looks so... different?",
 		"choices": {},
 		"next": ""
+	},
+<<<<<<< HEAD
+	"dont-jump": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "That's not a way to go out...",
+=======
+	"picture": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "This used to be in the living room. I almost forgot what his uniform looked like.",
+>>>>>>> 32e85cdbcb343fda2eee129acef51419a63b48cd
+		"choices": {},
+		"next": ""
 	}
 }
