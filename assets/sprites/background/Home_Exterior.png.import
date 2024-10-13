@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddlp4w2nnha0d"
-path="res://.godot/imported/Home_Exterior.png-6a9bc4575a114f6d910447def2d5af99.ctex"
+path="res://.godot/imported/Home_Exterior.png-2685981f3c5c27a5174d8442edd62ab9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Home_Exterior.png"
-dest_files=["res://.godot/imported/Home_Exterior.png-6a9bc4575a114f6d910447def2d5af99.ctex"]
+source_file="res://assets/sprites/background/Home_Exterior.png"
+dest_files=["res://.godot/imported/Home_Exterior.png-2685981f3c5c27a5174d8442edd62ab9.ctex"]
 
 [params]
 
