@@ -9,4 +9,4 @@ func _process(delta):
 func _on_button_pressed():
 	var distance = $"../Player".global_position - $".".global_position
 	if (distance.x < 30):
-		get_tree().change_scene_to_file("res://scenes/Home_Interior.tscn")
+		get_tree().change_scene_to_file("res://scenes/HomeInterior.tscn")
