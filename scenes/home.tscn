@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvgba3sx5xu3l"]
 
-[ext_resource type="Texture2D" uid="uid://bdjday43hxuft" path="res://assets/sprites/physical/home/Home_Exterior.PNG" id="1_hnoa0"]
-[ext_resource type="PackedScene" uid="uid://ih7xpwj2rrn2" path="res://scenes/Door.tscn" id="2_sxaec"]
+[ext_resource type="Texture2D" uid="uid://bdjday43hxuft" path="res://assets/sprites/physical/home/Home_Exterior.PNG" id="1_lg2tq"]
+[ext_resource type="PackedScene" path="res://scenes/Door.tscn" id="2_w5jpa"]
 
 [node name="Home" type="Sprite2D"]
-texture = ExtResource("1_hnoa0")
+texture = ExtResource("1_lg2tq")
 
-[node name="Door" parent="." instance=ExtResource("2_sxaec")]
+[node name="Door" parent="." instance=ExtResource("2_w5jpa")]
 position = Vector2(-9, 15)
-target_scene = "home_interior"
+target_scene = "home-interior"
+target_position = Vector2(109, 42)

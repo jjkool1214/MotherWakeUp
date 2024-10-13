@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://slf44x2r5u2n" path="res://assets/sprites/physical/home/Home_Interior.PNG" id="1_y4meq"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="2_g8xok"]
-[ext_resource type="PackedScene" uid="uid://ih7xpwj2rrn2" path="res://scenes/Door.tscn" id="3_t2jyt"]
+[ext_resource type="PackedScene" path="res://scenes/Door.tscn" id="3_t2jyt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfgj0"]
 size = Vector2(322.667, 1.25)
@@ -54,3 +54,4 @@ target_scene = "mother-room"
 position = Vector2(109, 38)
 scale = Vector2(3, 1.956)
 target_scene = "exteriors"
+target_position = Vector2(-355, 54)

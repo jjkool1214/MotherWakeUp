@@ -1,8 +1,14 @@
 extends CharacterBody2D
 
+class_name Player
+
 const SPEED = 50.0
 
 func _ready():
+	if not Game.enter_door_target_position == Vector2.ZERO:
+		global_position = Game.enter_door_target_position
+		Game.enter_door_target_position = Vector2.ZERO
+		
 	$Camera2D/Dialogue.start_dialogue("test-0")
 
 func _physics_process(delta):
@@ -25,13 +31,3 @@ func _physics_process(delta):
 		velocity += get_gravity() * delta
 	
 	move_and_slide()
-
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	$"../Home/Area2D/DoorInput".text = "You can enter BITCH BOT"
-	print("shit yourself")
-	
-
-func _on_area_2d_body_exited(body: Node2D) -> void:
-	$"../Home/Area2D/DoorInput".text = ""
-	print("shit yourself")
