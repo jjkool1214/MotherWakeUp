@@ -8,7 +8,8 @@ enum Scene { TITLE_MENU, EXTERIORS, HOME_INTERIOR, CAVE_INTERIOR }
 const all_scenes = {
 	"exteriors": preload("res://scenes/Exteriors.tscn"),
 	"home_interior": preload("res://scenes/HomeInterior.tscn"),
-	"cave_interior": preload("res://scenes/Cave.tscn")
+	"cave_interior": preload("res://scenes/Cave.tscn"),
+	"mother-room": preload("res://scenes/MotherRoom.tscn")
 }
 
 func change_scene(key):
