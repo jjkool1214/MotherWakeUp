@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0v5axcptbvpv"
-path="res://.godot/imported/land01.png-837590b9293917990e2da46dc7d0d0d3.ctex"
+uid="uid://cla55o6wx2ql4"
+path="res://.godot/imported/dialog_button_hint.png-d0909fb061aee0c76150a5dc8d3c8c8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/land01.png"
-dest_files=["res://.godot/imported/land01.png-837590b9293917990e2da46dc7d0d0d3.ctex"]
+source_file="res://assets/sprites/ui/dialog_button_hint.png"
+dest_files=["res://.godot/imported/dialog_button_hint.png-d0909fb061aee0c76150a5dc8d3c8c8d.ctex"]
 
 [params]
 

@@ -37,6 +37,7 @@ func reset() -> void:
 	$AvatarFrame.visible = false
 	$Avatar.texture = null
 	$TextFrame.visible = false
+	$ButtonHint.visible = false
 	$Text.visible_ratio = 0;
 	$Text.text = ""
 	$Choice1.disabled = true
@@ -69,6 +70,7 @@ func start_dialogue(key: String) -> bool:
 	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
 	$TextFrame.visible = true
+	$ButtonHint.visible = true
 	set_text(dialogue["text"])
 	
 	if len(dialogue["choices"]) == 2:

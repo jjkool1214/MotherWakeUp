@@ -12,6 +12,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
+[ext_resource type="PackedScene" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="7_4y064"]
 
 [node name="Exteriors" type="Node2D"]

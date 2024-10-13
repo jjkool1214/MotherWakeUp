@@ -56,6 +56,7 @@ target_position = Vector2(-355, 51)
 position = Vector2(55, 32)
 interactable_scale = Vector2(1, 2)
 target_scene = "mother-room"
+target_position = Vector2(80, 21)
 
 [node name="Fridge" parent="." instance=ExtResource("4_duu6v")]
 position = Vector2(-271, 27)
