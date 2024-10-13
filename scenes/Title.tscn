@@ -1,27 +1,28 @@
-[gd_scene load_steps=12 format=3 uid="uid://dub8iawxpu2y5"]
+[gd_scene load_steps=13 format=3 uid="uid://dub8iawxpu2y5"]
 
 [ext_resource type="Texture2D" uid="uid://dtwaa4oshortk" path="res://assets/sprites/background/Home Scenes/IMG_2797.PNG" id="1_kf7b7"]
+[ext_resource type="Script" path="res://assets/scripts/title.gd" id="1_q12jw"]
 [ext_resource type="Texture2D" uid="uid://fo6sr2l2l1lw" path="res://assets/sprites/background/Logo.png" id="2_io5ma"]
 [ext_resource type="Texture2D" uid="uid://do23iploiwhw7" path="res://assets/sprites/background/Play.png" id="3_8rjrj"]
 [ext_resource type="Texture2D" uid="uid://com87c3na4nox" path="res://assets/sprites/background/exit_Sign.png" id="4_8k0jk"]
 [ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="5_j0ean"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_46k0q"]
-atlas = ExtResource("3_8rjrj")
-region = Rect2(0, 0, 86, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_u0a18"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jofmq"]
 atlas = ExtResource("3_8rjrj")
 region = Rect2(86, 0, 86, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xh4ga"]
+atlas = ExtResource("3_8rjrj")
+region = Rect2(0, 0, 86, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8hckq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_46k0q")
+"texture": SubResource("AtlasTexture_jofmq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u0a18")
+"texture": SubResource("AtlasTexture_xh4ga")
 }],
 "loop": true,
 "name": &"default",
@@ -50,7 +51,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[node name="Menu" type="Control"]
+[node name="Title" type="Control"]
 layout_direction = 2
 layout_mode = 3
 anchor_right = 0.984
@@ -62,6 +63,7 @@ offset_bottom = -809.68
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(4, 4)
+script = ExtResource("1_q12jw")
 
 [node name="Room" type="TextureRect" parent="."]
 layout_mode = 0
@@ -73,7 +75,7 @@ scale = Vector2(1.12, 1.12)
 texture = ExtResource("1_kf7b7")
 flip_h = true
 
-[node name="Blockerr" type="ColorRect" parent="Room"]
+[node name="Blocker" type="ColorRect" parent="Room"]
 layout_mode = 0
 offset_left = 147.0
 offset_top = 115.0
@@ -84,23 +86,21 @@ color = Color(0.243137, 0.368627, 0.439216, 1)
 
 [node name="Logo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 184.0
-offset_top = 19.0
-offset_right = 293.0
-offset_bottom = 101.0
+offset_left = 180.25
+offset_top = 20.0
+offset_right = 289.25
+offset_bottom = 102.0
 scale = Vector2(1.12, 1.12)
 texture = ExtResource("2_io5ma")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Play" type="AnimatedSprite2D" parent="."]
 position = Vector2(240.25, 144)
 scale = Vector2(1.12, 1.12)
 sprite_frames = SubResource("SpriteFrames_8hckq")
-autoplay = "default"
 frame_progress = 0.226111
 speed_scale = 0.75
 
-[node name="Button" type="Button" parent="AnimatedSprite2D"]
-visible = false
+[node name="PlayButton" type="Button" parent="Play"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -111,17 +111,16 @@ offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.12, 1.12)
+theme_type_variation = &"FlatButton"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="Exit" type="AnimatedSprite2D" parent="."]
 position = Vector2(239, 201.5)
 scale = Vector2(1.12, 1.12)
 sprite_frames = SubResource("SpriteFrames_h383n")
-autoplay = "default"
 frame_progress = 0.06906
 speed_scale = 0.75
 
-[node name="Button" type="Button" parent="AnimatedSprite2D2"]
-visible = false
+[node name="ExitButton" type="Button" parent="Exit"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -132,8 +131,16 @@ offset_bottom = -24.4107
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.12, 1.12)
+theme_type_variation = &"FlatButton"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Pandora" type="Sprite2D" parent="."]
 position = Vector2(129.5, 235.365)
 scale = Vector2(3.875, 4.48312)
 texture = ExtResource("5_j0ean")
+
+[connection signal="mouse_entered" from="Play/PlayButton" to="." method="_on_play_button_mouse_entered"]
+[connection signal="mouse_exited" from="Play/PlayButton" to="." method="_on_play_button_mouse_exited"]
+[connection signal="pressed" from="Play/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="mouse_entered" from="Exit/ExitButton" to="." method="_on_exit_button_mouse_entered"]
+[connection signal="mouse_exited" from="Exit/ExitButton" to="." method="_on_exit_button_mouse_exited"]
+[connection signal="pressed" from="Exit/ExitButton" to="." method="_on_exit_button_pressed"]
