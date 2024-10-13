@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rqadrq5pd8v7"
-path="res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"
+uid="uid://db7d1puce7fdh"
+path="res://.godot/imported/coffee-shop.png-3ddf72fe73dca804a202252c530c1ecd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Background/Cave Scenes/cave_middleground.png"
-dest_files=["res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"]
+source_file="res://assets/SFX/coffee-shop.png"
+dest_files=["res://.godot/imported/coffee-shop.png-3ddf72fe73dca804a202252c530c1ecd.ctex"]
 
 [params]
 
