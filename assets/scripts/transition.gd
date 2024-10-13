@@ -18,3 +18,4 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		animation_player.play("fade_from_black")
 	else:
 		color_rect.visible = false
+		on_transition_finished.emit()

@@ -25,6 +25,7 @@ func _process(delta: float) -> void:
 	
 	if active_dialogue["next"].is_empty():
 		reset()
+		Game.freeze_player = false
 		return
 	
 	start_dialogue(active_dialogue["next"])
@@ -61,6 +62,7 @@ func start_dialogue(key: String) -> bool:
 			return false
 	
 	reset()
+	Game.freeze_player = true
 	active_dialogue = dialogue
 	dialogue_history.append(key)
 	

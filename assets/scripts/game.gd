@@ -4,6 +4,7 @@ signal trigger_player_teleport
 
 var game_state: State = State.TITLE
 var enter_door_target_position: Vector2 = Vector2.ZERO
+var freeze_player: bool = false
 
 enum State { TITLE, STAGE_0, STAGE_1, STAGE_2, STAGE_3 }
 enum Scene { TITLE_MENU, EXTERIORS, HOME_INTERIOR, CAVE_INTERIOR }
@@ -20,7 +21,9 @@ func change_scene(key: String, target_position: Vector2):
 		return
 	
 	var scene: PackedScene = all_scenes[key]
+	freeze_player = true
 	Transition.start_fade()
 	await Transition.on_transition_finished
 	get_tree().change_scene_to_packed(scene)
 	enter_door_target_position = target_position
+	freeze_player = false

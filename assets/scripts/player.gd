@@ -8,6 +8,10 @@ func _ready():
 		Game.enter_door_target_position = Vector2.ZERO
 
 func _physics_process(delta):
+	if Game.freeze_player:
+		$AnimatedSprite2D.play("idle")
+		return
+	
 	var direction = Input.get_axis("left", "right")
 	
 	if direction:
@@ -19,7 +23,7 @@ func _physics_process(delta):
 			$AnimatedSprite2D.flip_h = true;
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		$AnimatedSprite2D.play('idle')
+		$AnimatedSprite2D.play("idle")
 	
 	if not is_on_floor():
 		$AnimatedSprite2D.play("fall")
