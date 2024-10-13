@@ -9,6 +9,21 @@
 z_index = 999
 script = ExtResource("1_qq3t6")
 
+[node name="AvatarFrame" type="Sprite2D" parent="."]
+position = Vector2(-277, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_wsqv1")
+
+[node name="Avatar" type="Sprite2D" parent="."]
+position = Vector2(-276, 0)
+scale = Vector2(3, 3)
+texture = ExtResource("2_yi2l8")
+
+[node name="TextFrame" type="Sprite2D" parent="."]
+position = Vector2(0, 2.98023e-08)
+scale = Vector2(3.66406, 1.78125)
+texture = ExtResource("3_jqdek")
+
 [node name="Text" type="Label" parent="."]
 z_index = 999
 offset_left = -228.0
@@ -19,21 +34,6 @@ text = "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TE
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
-
-[node name="TextFrame" type="Sprite2D" parent="."]
-position = Vector2(0, 2.98023e-08)
-scale = Vector2(3.66406, 1.78125)
-texture = ExtResource("3_jqdek")
-
-[node name="AvatarFrame" type="Sprite2D" parent="."]
-position = Vector2(-277, 0)
-scale = Vector2(2, 2)
-texture = ExtResource("3_wsqv1")
-
-[node name="Avatar" type="Sprite2D" parent="."]
-position = Vector2(-276, 0)
-scale = Vector2(3, 3)
-texture = ExtResource("2_yi2l8")
 
 [node name="Choice1" type="Button" parent="."]
 offset_left = -147.0
