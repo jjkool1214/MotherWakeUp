@@ -64,3 +64,10 @@ frame_progress = 0.776537
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_mio30")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-3.8147e-06, -46)
+scale = Vector2(0.970436, 1.58023)
+zoom = Vector2(5, 5)
+process_callback = 0
+position_smoothing_enabled = true
