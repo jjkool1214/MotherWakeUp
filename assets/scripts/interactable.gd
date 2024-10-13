@@ -24,7 +24,7 @@ func _process(_delta: float) -> void:
 		
 
 func _on_body_entered(body: Node2D) -> void:
-	if not body.get_class() == "CharacterBody2D":
+	if not body.name == "Player":
 		return
 		
 	$Hint.visible = true

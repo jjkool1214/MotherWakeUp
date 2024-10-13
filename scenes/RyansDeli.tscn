@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://yl8qwu7i1nct"]
+[gd_scene load_steps=15 format=3 uid="uid://cfe5yux41hjap"]
 
 [ext_resource type="Texture2D" uid="uid://d1r77o1rybblb" path="res://assets/sprites/physical/ryans_deli/ryan_s-deli.png" id="1_xmucr"]
 
@@ -98,4 +98,5 @@ animations = [{
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hr8bd")
+autoplay = "default"
 frame_progress = 0.535951

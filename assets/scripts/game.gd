@@ -9,6 +9,9 @@ var freeze_player: bool = false
 enum State { TITLE, STAGE_0, STAGE_1, STAGE_2, STAGE_3 }
 enum Scene { TITLE_MENU, EXTERIORS, HOME_INTERIOR, CAVE_INTERIOR }
 
+func set_state(state: State) -> void:
+	game_state = state
+
 const all_scenes = {
 	"exteriors": preload("res://scenes/Exteriors.tscn"),
 	"home-interior": preload("res://scenes/HomeInterior.tscn"),
