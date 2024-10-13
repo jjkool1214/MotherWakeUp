@@ -18,9 +18,8 @@
 		"prerequisites": [],
 		"text": "No, sweetie, don't worry about me. It just means you'll have an extra awesome gift this year!",
 		"choices": {},
-		"next": ""
+		"next": "scene1-call-1"
 	},
-	
 	"scene1-call-1": {
 		"speaker": "telephone",
 		"prerequisites": [],
