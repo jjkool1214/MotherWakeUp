@@ -21,5 +21,4 @@ func _physics_process(delta):
 		$AnimatedSprite2D.play("fall")
 		velocity += get_gravity() * delta
 	
-
 	move_and_slide()

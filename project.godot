@@ -10,8 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Mother Wake Up"
-run/main_scene="res://scenes/Stage1.tscn"
+config/name="Mother, Wake Up"
+config/version="1.0"
+run/main_scene="res://scenes/Exteriors.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,7 +22,8 @@ Game="*res://assets/scripts/game.gd"
 
 [display]
 
-window/size/mode=4
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [dotnet]
 

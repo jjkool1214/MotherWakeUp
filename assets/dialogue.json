@@ -1,0 +1,8 @@
+{
+	"test": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "This is a test message!",
+		"choices": []
+	}
+}

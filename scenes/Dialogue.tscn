@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3ewxa1qc8ckc"]
+
+[ext_resource type="Script" path="res://assets/scripts/dialogue.gd" id="1_qq3t6"]
+
+[node name="Dialogue" type="Node2D"]
+script = ExtResource("1_qq3t6")
+
+[node name="Text" type="Label" parent="."]
+z_index = 999
+offset_left = -282.0
+offset_top = -24.0
+offset_right = 283.0
+offset_bottom = 25.0
+text = "TEXT
+MORE TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Avatar" type="Sprite2D" parent="."]
+
+[node name="Frame" type="Sprite2D" parent="."]
+
+[node name="Choice1" type="Button" parent="."]
+offset_left = -147.0
+offset_top = 29.0
+offset_right = -25.0
+offset_bottom = 60.0
+text = "CHOICE ONE"
+
+[node name="Choice2" type="Button" parent="."]
+offset_left = 26.0
+offset_top = 28.0
+offset_right = 148.0
+offset_bottom = 59.0
+text = "CHOICE TWO
+"
