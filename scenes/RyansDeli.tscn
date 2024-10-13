@@ -1,0 +1,101 @@
+[gd_scene load_steps=15 format=3 uid="uid://yl8qwu7i1nct"]
+
+[ext_resource type="Texture2D" uid="uid://d1r77o1rybblb" path="res://assets/sprites/physical/ryans_deli/ryan_s-deli.png" id="1_xmucr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hj38w"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(0, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lv16c"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(189, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hkbh"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(378, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12m54"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(567, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76lkq"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(756, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj7io"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(945, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yq5cy"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(1134, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxq3t"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(1323, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4d3v"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(1512, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wiv0"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(1701, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4w16"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(1890, 0, 189, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_audmd"]
+atlas = ExtResource("1_xmucr")
+region = Rect2(2079, 0, 189, 90)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hr8bd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hj38w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lv16c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hkbh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12m54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76lkq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj7io")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yq5cy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxq3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4d3v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wiv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4w16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_audmd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RyansDeli" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hr8bd")
+frame_progress = 0.535951
