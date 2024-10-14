@@ -7,6 +7,7 @@ signal trigger_player_teleport
 @export var dialogue_key: String = ""
 @export var target_scene: String = ""
 @export var target_position: Vector2 = Vector2.ZERO
+@export var target_time_of_day: Game.TimeOfDay = Game.TimeOfDay.DAY
 
 var can_interact: bool = false
 
@@ -24,7 +25,7 @@ func _process(_delta: float) -> void:
 		await $"../Player/Camera2D/Dialogue".trigger_dialogue_over
 		Game.freeze_player = false
 	elif not target_scene.is_empty():
-		Game.change_scene(target_scene, target_position)
+		Game.change_scene(target_scene, target_position, target_time_of_day)
 
 func _on_body_entered(body: Node2D) -> void:
 	if not body.name == "Player" or not $"../Player/Camera2D/Dialogue".active_dialogue.is_empty() or not enabled:

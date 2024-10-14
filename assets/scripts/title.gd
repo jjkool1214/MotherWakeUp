@@ -5,7 +5,7 @@ extends Control
 
 func _on_play_button_pressed() -> void:
 	Game.set_state(Game.State.STAGE_0)
-	Game.change_scene("home-interior", Vector2(-190, 45.5))
+	Game.change_scene("home-interior", Vector2(-190, 45.5), Game.TimeOfDay.DAY)
 
 func _on_play_button_mouse_entered() -> void:
 	play_button.set_frame_and_progress(1, 1)

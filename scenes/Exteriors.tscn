@@ -1,20 +1,21 @@
-[gd_scene load_steps=19 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=20 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
 [ext_resource type="Script" path="res://assets/scripts/exteriors.gd" id="1_uq1w1"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" uid="uid://yl8qwu7i1nct" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://bqdc57mqoivg1" path="res://scenes/world objects/RyansDeliSign.tscn" id="7_e6f2n"]
+[ext_resource type="PackedScene" uid="uid://rsy40yx81brv" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
-[ext_resource type="PackedScene" path="res://scenes/Interactable.tscn" id="9_d12ox"]
+[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
-[ext_resource type="PackedScene" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
-[ext_resource type="PackedScene" uid="uid://dmknc0qedbwa7" path="res://scenes/Jenkins.tscn" id="12_fi7e5"]
+[ext_resource type="PackedScene" uid="uid://k72o28fx5ohh" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
+[ext_resource type="PackedScene" path="res://scenes/Jenkins.tscn" id="12_fi7e5"]
 [ext_resource type="PackedScene" path="res://scenes/Sydney.tscn" id="13_a77mt"]
-[ext_resource type="PackedScene" path="res://scenes/James.tscn" id="14_756v7"]
+[ext_resource type="Texture2D" uid="uid://cdl6enn0u23wi" path="res://assets/sprites/background/background_morning.jpg" id="13_v8o3y"]
+[ext_resource type="PackedScene" uid="uid://dbrllob8ynnxf" path="res://scenes/James.tscn" id="14_756v7"]
 [ext_resource type="PackedScene" path="res://scenes/Julie.tscn" id="15_lrbrh"]
 [ext_resource type="PackedScene" uid="uid://c85713a3ku51h" path="res://scenes/Crack.tscn" id="17_aks2t"]
 
@@ -69,16 +70,15 @@ dialogue_key = "scene1-outside-home-window"
 [node name="RyansDeli" parent="." instance=ExtResource("7_ub8mj")]
 position = Vector2(573, 25)
 
-[node name="TalkToRyan" parent="." instance=ExtResource("9_d12ox")]
-visible = false
-position = Vector2(467, 58)
-scale = Vector2(1.5, 1.5)
-target_position = Vector2(400, 400)
+[node name="RyansDeliSign" parent="." instance=ExtResource("7_e6f2n")]
+position = Vector2(577, 52)
+scale = Vector2(0.673913, 0.673913)
 
-[node name="Ryan" parent="." instance=ExtResource("10_xjc0u")]
-visible = false
-position = Vector2(467, 58)
-scale = Vector2(1.5, 1.5)
+[node name="CloseDeli" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(577, 52)
+target_scene = "exteriors"
+target_position = Vector2(551, 55)
+target_time_of_day = 1
 
 [node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
 position = Vector2(172, 55)
@@ -123,6 +123,10 @@ dialogue_key = "scene1-outside-julie"
 [node name="Julie" parent="." instance=ExtResource("15_lrbrh")]
 position = Vector2(630, 55)
 
+[node name="Ryan" parent="." instance=ExtResource("10_xjc0u")]
+visible = false
+position = Vector2(511, 58)
+
 [node name="Player" parent="." instance=ExtResource("3_fa37f")]
 position = Vector2(-211, 55)
 
@@ -135,7 +139,7 @@ motion_scale = Vector2(0.1, 0)
 [node name="Sprite2D" type="Sprite2D" parent="Player/ParallaxBackground/ParallaxLayer"]
 position = Vector2(296, 34)
 scale = Vector2(1.88547, 2.06736)
-texture = ExtResource("1_ipgou")
+texture = ExtResource("13_v8o3y")
 
 [node name="LandHome" parent="." instance=ExtResource("4_q0e7q")]
 position = Vector2(-346, 79)

@@ -588,7 +588,7 @@
 		"prerequisites": [],
 		"text": "Maybe you're right. Thanks, Ryan. I guess I'll head to the pharmacy tonight.",
 		"choices": {},
-		"next": "scene1-ryan14"
+		"next": ""
 	},
 	
 	"scene1-construction": {

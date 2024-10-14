@@ -52,11 +52,11 @@ func _on_dialogue_started(key: String) -> void:
 	elif key == "scene1-letter-4":
 		await dialogue.trigger_dialogue_over
 		Game.set_state(Game.State.STAGE_1)
-		Game.change_scene("home-interior", Vector2(-31, 45.5))
+		Game.change_scene("home-interior", Vector2(-31, 45.5), Game.TimeOfDay.DAY)
 
 func _on_stop_walking() -> void:
 	$"Player/AnimatedSprite2D".play("idle")
 	$"Player/AnimatedSprite2D".flip_h = true
 	await dialogue.trigger_dialogue_over
 	Game.in_cutscene = false
-	Game.change_scene("home-interior", Vector2(-31, 45.5))
+	Game.change_scene("home-interior", Vector2(-31, 45.5), Game.TimeOfDay.DAY)
