@@ -8,11 +8,15 @@ func _ready():
 		Game.enter_door_target_position = Vector2.ZERO
 
 func _physics_process(delta):
-	if Game.freeze_player:
-		$AnimatedSprite2D.play("idle")
-		return
-	
 	var direction = Input.get_axis("left", "right")
+	
+	if Game.in_cutscene and $AnimatedSprite2D.animation == "walk":
+		if $AnimatedSprite2D.flip_h:
+			direction = -1
+		else:
+			direction = 1
+	elif Game.in_cutscene or Game.freeze_player:
+		direction = 0
 	
 	if direction:
 		velocity.x = direction * SPEED

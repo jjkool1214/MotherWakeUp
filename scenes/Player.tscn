@@ -65,7 +65,7 @@ script = ExtResource("1_diema")
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_mfeh5")
 animation = &"walk"
-frame_progress = 0.776537
+frame_progress = 0.628769
 
 [node name="Wall Collider" type="CollisionShape2D" parent="."]
 scale = Vector2(1.5, 1.5)

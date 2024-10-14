@@ -5,6 +5,8 @@ signal trigger_player_teleport
 var game_state: State = State.TITLE
 var enter_door_target_position: Vector2 = Vector2.ZERO
 var freeze_player: bool = false
+var cutscenes: Array = []
+var in_cutscene: bool = false
 
 enum State { TITLE, STAGE_0, STAGE_1, STAGE_2, STAGE_3 }
 enum Scene { TITLE_MENU, EXTERIORS, HOME_INTERIOR, CAVE_INTERIOR }

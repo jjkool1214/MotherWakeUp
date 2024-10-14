@@ -2,6 +2,7 @@ extends Area2D
 class_name Interactable
 signal trigger_player_teleport
 
+@export var enabled: bool = true
 @export var interactable_scale: Vector2 = Vector2.ONE
 @export var dialogue_key: String = ""
 @export var target_scene: String = ""
@@ -18,13 +19,15 @@ func _process(_delta: float) -> void:
 		return
 	
 	if not dialogue_key.is_empty():
+		Game.freeze_player = true
 		$"../Player/Camera2D/Dialogue".start_dialogue(dialogue_key)
+		await $"../Player/Camera2D/Dialogue".trigger_dialogue_over
+		Game.freeze_player = false
 	elif not target_scene.is_empty():
 		Game.change_scene(target_scene, target_position)
-		
 
 func _on_body_entered(body: Node2D) -> void:
-	if not body.name == "Player":
+	if not body.name == "Player" or not $"../Player/Camera2D/Dialogue".active_dialogue.is_empty() or not enabled:
 		return
 		
 	$Hint.visible = true

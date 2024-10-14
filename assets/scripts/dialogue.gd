@@ -1,9 +1,13 @@
 extends Node
 
+signal trigger_dialogue_started
+signal trigger_dialogue_over
+
 var speakers: Dictionary = {}
 var all_dialogue: Dictionary = {}
 var dialogue_history: Array = []
 
+var active_dialogue_key: String = ""
 var active_dialogue: Dictionary = {}
 var choice_1: Dictionary = {}
 var choice_2: Dictionary = {}
@@ -24,13 +28,17 @@ func _process(delta: float) -> void:
 		return
 	
 	if active_dialogue["next"].is_empty():
+		trigger_dialogue_over.emit(active_dialogue_key)
 		reset()
-		Game.freeze_player = false
+		return
+	
+	if not $Text.visible_ratio == 1:
 		return
 	
 	start_dialogue(active_dialogue["next"])
 
 func reset() -> void:
+	active_dialogue_key = ""
 	active_dialogue = {}
 	choice_1 = {}
 	choice_2 = {}
@@ -63,9 +71,10 @@ func start_dialogue(key: String) -> bool:
 			return false
 	
 	reset()
-	Game.freeze_player = true
+	active_dialogue_key = key
 	active_dialogue = dialogue
 	dialogue_history.append(key)
+	trigger_dialogue_started.emit(active_dialogue_key)
 	
 	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
