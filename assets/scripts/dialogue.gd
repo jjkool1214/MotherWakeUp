@@ -69,6 +69,11 @@ func start_dialogue(key: String) -> bool:
 	
 	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
+	
+	var path = "res://assets/SFX/voices/" + speaker["name"] + ".mp3"
+	$"../../Voices".stream = load(path)
+	$"../../Voices".play()
+	
 	$TextFrame.visible = true
 	$ButtonHint.visible = true
 	set_text(dialogue["text"])
