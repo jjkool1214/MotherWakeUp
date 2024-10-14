@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtwaa4oshortk"
-path="res://.godot/imported/IMG_2797.PNG-4b75e48b4a292add3727000c7c48d619.ctex"
+uid="uid://krw874njf350"
+path="res://.godot/imported/crack.png-d5dac6dc500b95dd81cd77648494a402.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background/Home Scenes/IMG_2797.PNG"
-dest_files=["res://.godot/imported/IMG_2797.PNG-4b75e48b4a292add3727000c7c48d619.ctex"]
+source_file="res://assets/sprites/background/Cave Scenes/crack.png"
+dest_files=["res://.godot/imported/crack.png-d5dac6dc500b95dd81cd77648494a402.ctex"]
 
 [params]
 
