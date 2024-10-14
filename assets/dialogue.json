@@ -641,9 +641,9 @@
 		"prerequisites": [],
 		"text": "Where... where am I? Is this a cave?",
 		"choices": {},
-		"next": ""
+		"next": "scene1-cave-intro2"
 	},
-	"scene1-cave-hole": {
+	"scene1-cave-intro2": {
 		"speaker": "pandora",
 		"prerequisites": [],
 		"text": "I'll need to find a way back up eventually...",
@@ -655,7 +655,7 @@
 		"prerequisites": [],
 		"text": "I... I see my mother. She's...",
 		"choices": {},
-		"next": "scene1-cave-stone"
+		"next": "scene1-cave-stone2"
 	},
 	"scene1-cave-stone2": {
 		"speaker": "pandora",
@@ -667,7 +667,7 @@
 	"scene1-cave-stone3": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "This could be the cure... after all this time. I=I'll have my mother back.",
+		"text": "This could be the cure... after all this time. I-I'll have my mother back.",
 		"choices": {},
 		"next": ""
 	},
