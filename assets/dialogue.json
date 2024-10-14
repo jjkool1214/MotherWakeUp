@@ -417,21 +417,21 @@
 	"scene1-outside-clock": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "Phew, just on time. mom would be proud. A quick 12-hour shift, and I'll be done in no time.",
+		"text": "Phew, just on time. Mom would be proud. A quick 12-hour shift, and I'll be done in no time.",
 		"choices": {},
 		"next": ""
 	},
 	"scene1-outside-closed-sign": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "I can't forget to flip that once I open up. The last two timnes, I've forgotten.",
+		"text": "I can't forget to flip that once I open up. The last two times, I've forgotten.",
 		"choices": {},
 		"next": "scene1-outside-closed-sign2"
 	},
 	"scene1-outside-closed-sign2": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "... I guess there's just been a ot on my mind.",
+		"text": "... I guess there's just been a lot on my mind.",
 		"choices": {},
 		"next": ""
 	},

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=15 format=3 uid="uid://b8b2oa4h50baa"]
 
 [ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/Background/background_stage1.png" id="1_ipgou"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
 [ext_resource type="PackedScene" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
+[ext_resource type="PackedScene" uid="uid://dmknc0qedbwa7" path="res://scenes/Jenkins.tscn" id="12_fi7e5"]
+[ext_resource type="PackedScene" uid="uid://by0b3vgystbiw" path="res://scenes/Sydney.tscn" id="13_a77mt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
@@ -102,3 +104,17 @@ dialogue_key = "scene1-outside-bank"
 [node name="Interactable2" parent="." instance=ExtResource("9_d12ox")]
 position = Vector2(319, 54)
 dialogue_key = "scene1-outside-fast-food-door"
+
+[node name="Jenkins" parent="." instance=ExtResource("12_fi7e5")]
+position = Vector2(-11, 57)
+
+[node name="talk-to-jenkins" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(-11, 60)
+dialogue_key = "scene1-outside-homeless-guy"
+
+[node name="Sydney" parent="." instance=ExtResource("13_a77mt")]
+position = Vector2(548, 58)
+
+[node name="talk-to-sydney" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(548, 60)
+dialogue_key = "scene1-outside-sydney"
