@@ -120,7 +120,7 @@
 		"next": "scene1-pasta-3"
 	},
 	"scene1-pasta-3": {
-		"speaker": "mother",
+		"speaker": "pandora",
 		"prerequisites": [],
 		"text": "Well, okay.",
 		"choices": {},
@@ -148,7 +148,7 @@
 		"next": "scene1-pasta-7"
 	},
 	"scene1-pasta-7": {
-		"speaker": "pandora",
+		"speaker": "mother",
 		"prerequisites": [],
 		"text": "No, no, no. I'm fine. We're fine.",
 		"choices": {},
@@ -213,7 +213,7 @@
 		"next": ""
 	},
 	"must-check-in-mom": {
-		"speaker": "mother",
+		"speaker": "pandora",
 		"prerequisites": [],
 		"text": "I think I should check in with Mother before I leave...",
 		"choices": {},

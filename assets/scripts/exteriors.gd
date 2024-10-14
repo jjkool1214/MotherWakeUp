@@ -33,7 +33,7 @@ func ryan_advice_cutscene() -> void:
 	$Sydney.visible = false
 	$TalkToJames.enabled = false
 	$James.visible = false
-	$TakToJulie.enabled = false
+	$TalkToJulie.enabled = false
 	$Julie.visible = false
 	$ConstructionSignInteract.enabled = true
 	$ConstructionSign.visible = true
