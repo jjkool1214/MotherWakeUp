@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvgba3sx5xu3l"]
 
 [ext_resource type="Texture2D" uid="uid://bdjday43hxuft" path="res://assets/sprites/physical/home/Home_Exterior.PNG" id="1_lg2tq"]
-[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="2_swg5e"]
+[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="2_swg5e"]
 
 [node name="Home" type="Sprite2D"]
 texture = ExtResource("1_lg2tq")

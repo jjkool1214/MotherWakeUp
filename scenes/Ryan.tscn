@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gduatam7ilrm"]
+
+[ext_resource type="Texture2D" uid="uid://p0hdpenl5dsm" path="res://assets/sprites/characters/NPCs/Ryan.png" id="1_j2ins"]
+
+[node name="Ryan" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j2ins")

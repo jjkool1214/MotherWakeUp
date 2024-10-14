@@ -1,16 +1,16 @@
 [gd_scene load_steps=13 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/Background/background_stage1.png" id="1_ipgou"]
+[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" uid="uid://cfe5yux41hjap" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://rsy40yx81brv" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
-[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
+[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
-[ext_resource type="PackedScene" uid="uid://dmknc0qedbwa7" path="res://scenes/Jenkins.tscn" id="11_gax0g"]
+[ext_resource type="PackedScene" uid="uid://gduatam7ilrm" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
@@ -24,8 +24,9 @@ position = Vector2(186, 50)
 position = Vector2(946, 22)
 
 [node name="Home" parent="." instance=ExtResource("2_36t4s")]
-position = Vector2(-341, 29)
+position = Vector2(-342, 29)
 scale = Vector2(1.5, 1.5)
+texture = null
 
 [node name="RyansDeli" parent="." instance=ExtResource("7_ub8mj")]
 position = Vector2(573, 25)
@@ -72,7 +73,16 @@ shape = SubResource("RectangleShape2D_qkh6a")
 
 [node name="Interactable" parent="Left Barrier" instance=ExtResource("9_d12ox")]
 position = Vector2(-528, 57)
-dialogue_key = "dont-jump"
+
+[node name="Ryan" parent="." instance=ExtResource("10_xjc0u")]
+visible = false
+position = Vector2(467, 58)
+scale = Vector2(1.5, 1.5)
+
+[node name="TalkToRyan" parent="Ryan" instance=ExtResource("9_d12ox")]
+visible = false
+position = Vector2(0, -2.6226e-06)
+target_position = Vector2(400, 400)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_n303h")
@@ -80,9 +90,15 @@ volume_db = -6.37
 autoplay = true
 parameters/looping = true
 
-[node name="talk to jenkins" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(-237, 60)
-dialogue_key = "scene1-outside-homeless-guy"
+[node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(180, 55)
+dialogue_key = "scene1-outside-banner"
 
-[node name="Jenkins" parent="." instance=ExtResource("11_gax0g")]
-position = Vector2(-236, 58)
+[node name="Interactable" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(57, 54)
+interactable_scale = Vector2(2, 1)
+dialogue_key = "scene1-outside-bank"
+
+[node name="Interactable2" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(144, 58)
+dialogue_key = "scene1-outside-fast-food-door"
