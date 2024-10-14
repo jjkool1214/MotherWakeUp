@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b53rs7gfmkxvd"]
+[gd_scene load_steps=14 format=3 uid="uid://b53rs7gfmkxvd"]
 
 [ext_resource type="Texture2D" uid="uid://pl5j6aun2dil" path="res://assets/sprites/physical/cave/cave_background.png" id="1_ht6ww"]
 [ext_resource type="PackedScene" uid="uid://chbn3e51s5r2e" path="res://scenes/world objects/Vine.tscn" id="2_vu64c"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bdmcyflbpeblu" path="res://scenes/world objects/Altar.tscn" id="6_x5s77"]
 [ext_resource type="Texture2D" uid="uid://1dcakgiw04kd" path="res://assets/sprites/background/Cave Scenes/cave_foreground.png" id="7_gjst8"]
 [ext_resource type="PackedScene" uid="uid://kmj38ectyjts" path="res://scenes/world objects/Unakite.tscn" id="7_ydbd0"]
+[ext_resource type="PackedScene" path="res://scenes/Interactable.tscn" id="8_0h4g8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpwqc"]
 size = Vector2(168, 4.5)
@@ -15,7 +16,7 @@ size = Vector2(168, 4.5)
 size = Vector2(139, 3.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phan6"]
-size = Vector2(13.5, 59.5)
+size = Vector2(1.75, 59.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2s8i"]
 size = Vector2(5.5, 83.75)
@@ -40,7 +41,7 @@ position = Vector2(541, -15)
 scale = Vector2(4, 4)
 
 [node name="Altar" parent="." instance=ExtResource("6_x5s77")]
-position = Vector2(305, 132)
+position = Vector2(94, 138)
 
 [node name="unakite" parent="Altar" instance=ExtResource("7_ydbd0")]
 position = Vector2(1, -9)
@@ -67,7 +68,7 @@ position = Vector2(77.75, 39.75)
 shape = SubResource("RectangleShape2D_g1suo")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="COLLISIONS"]
-position = Vector2(153.5, 12.75)
+position = Vector2(147.625, 12.75)
 shape = SubResource("RectangleShape2D_phan6")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="COLLISIONS"]
@@ -82,3 +83,23 @@ shape = SubResource("RectangleShape2D_vo8qg")
 position = Vector2(-64, -55)
 rotation = 3.14159
 scale = Vector2(2.5, 2.5)
+
+[node name="HoleInteractable" parent="." instance=ExtResource("8_0h4g8")]
+position = Vector2(-552, 126)
+dialogue_key = "scene1-cave-intro"
+
+[node name="AltarInteract" parent="." instance=ExtResource("8_0h4g8")]
+position = Vector2(95, 126)
+dialogue_key = "scene1-cave-stone"
+
+[node name="OtherInteract" parent="." instance=ExtResource("8_0h4g8")]
+position = Vector2(335, 138)
+dialogue_key = "scene1-cave-other-stones"
+
+[node name="Interactable" parent="." instance=ExtResource("8_0h4g8")]
+position = Vector2(501, 127)
+dialogue_key = "scene1-cave-vine"
+
+[node name="Interactable2" parent="." instance=ExtResource("8_0h4g8")]
+position = Vector2(548, 129)
+target_scene = "Exteriors"
