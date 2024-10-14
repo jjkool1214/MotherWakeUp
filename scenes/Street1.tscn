@@ -935,5 +935,6 @@ position = Vector2(27, 17)
 texture = ExtResource("8_sx4ga")
 
 [node name="Car-1" type="Sprite2D" parent="."]
-position = Vector2(184, 14)
+position = Vector2(203, 13)
+scale = Vector2(1.325, 1.325)
 texture = ExtResource("9_3wx0i")

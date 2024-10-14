@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://b72dtx8kh0abf"]
+
+[ext_resource type="Texture2D" uid="uid://o4f8o5huqw4s" path="res://assets/sprites/characters/NPCs/richard.png" id="1_257lk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w80vt"]
+atlas = ExtResource("1_257lk")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8jj0"]
+atlas = ExtResource("1_257lk")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bh6sl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w80vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8jj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Richard" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_bh6sl")
+autoplay = "default"
+frame_progress = 0.275804

@@ -594,7 +594,7 @@
 	"scene1-construction": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "Great, guess I'll have to find another way home after the pharmacy.",
+		"text": "Construction... Great, guess I'll have to find another way home after the pharmacy.",
 		"choices": {},
 		"next": ""
 	},

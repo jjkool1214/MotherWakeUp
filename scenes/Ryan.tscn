@@ -1,8 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://gduatam7ilrm"]
+[gd_scene load_steps=5 format=3 uid="uid://0v0hdotohof7"]
 
-[ext_resource type="Texture2D" uid="uid://p0hdpenl5dsm" path="res://assets/sprites/characters/NPCs/Ryan.png" id="1_j2ins"]
+[ext_resource type="Texture2D" uid="uid://bperuawsb6h4o" path="res://assets/sprites/characters/NPCs/Ryan.png" id="1_j2ins"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rv7p"]
+atlas = ExtResource("1_j2ins")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78rvp"]
+atlas = ExtResource("1_j2ins")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wpclt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rv7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78rvp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [node name="Ryan" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_j2ins")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_wpclt")
+frame_progress = 0.774509
