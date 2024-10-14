@@ -1,16 +1,16 @@
 [gd_scene load_steps=13 format=3 uid="uid://b8b2oa4h50baa"]
 
-[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
+[ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/Background/background_stage1.png" id="1_ipgou"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" uid="uid://rsy40yx81brv" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://yl8qwu7i1nct" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
-[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="9_d12ox"]
+[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
-[ext_resource type="PackedScene" uid="uid://gduatam7ilrm" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
+[ext_resource type="PackedScene" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
