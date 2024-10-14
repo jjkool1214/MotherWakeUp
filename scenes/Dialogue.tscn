@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3ewxa1qc8ckc"]
+[gd_scene load_steps=10 format=3 uid="uid://b3ewxa1qc8ckc"]
 
 [ext_resource type="Script" path="res://assets/scripts/dialogue.gd" id="1_qq3t6"]
 [ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="2_yi2l8"]
@@ -27,6 +27,9 @@ animations = [{
 "name": &"default",
 "speed": 2.0
 }]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sivhw"]
+font_size = 12
 
 [node name="Dialogue" type="Node2D"]
 z_index = 999
@@ -60,6 +63,7 @@ offset_top = -25.0
 offset_right = 228.0
 offset_bottom = 24.0
 text = "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
+label_settings = SubResource("LabelSettings_sivhw")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
