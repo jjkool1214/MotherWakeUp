@@ -1,12 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cvgba3sx5xu3l"]
+[gd_scene load_steps=2 format=3 uid="uid://cvgba3sx5xu3l"]
 
 [ext_resource type="Texture2D" uid="uid://bdjday43hxuft" path="res://assets/sprites/physical/home/Home_Exterior.PNG" id="1_lg2tq"]
-[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="2_swg5e"]
 
 [node name="Home" type="Sprite2D"]
 texture = ExtResource("1_lg2tq")
-
-[node name="Door" parent="." instance=ExtResource("2_swg5e")]
-position = Vector2(-9, 13)
-target_scene = "home-interior"
-target_position = Vector2(109, 42)

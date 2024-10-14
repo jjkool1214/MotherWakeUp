@@ -8,8 +8,14 @@ func _ready() -> void:
 	if "intro" not in Game.cutscenes:
 		intro_cutscene()
 	elif "letter" not in Game.cutscenes:
-		$Mother.position = Vector2(-92, 45.5)
 		letter_cutscene()
+	else:
+		$Mother.visible = false
+		$OpenLetter.enabled = false
+		if Game.game_state == Game.State.STAGE_1 and not "checkin-1" in Game.cutscenes:
+			$ExitDoor.dialogue_key = "must-check-in-mom"
+		else:
+			$ExitDoor.dialogue_key = ""
 
 func intro_cutscene() -> void:
 	Game.cutscenes.append("intro")
@@ -22,6 +28,7 @@ func letter_cutscene() -> void:
 	Game.cutscenes.append("letter")
 	Game.in_cutscene = true
 	$"Player/AnimatedSprite2D".flip_h = true
+	$Mother.position = Vector2(-92, 45.5)
 	$Letter.visible = true
 	dialogue.start_dialogue("scene1-pasta-1")
 
@@ -42,6 +49,10 @@ func _on_dialogue_started(key: String) -> void:
 		$BedroomDoor.enabled = false
 		$ExitDoor.enabled = false
 		Game.in_cutscene = false
+	elif key == "scene1-letter-4":
+		await dialogue.trigger_dialogue_over
+		Game.set_state(Game.State.STAGE_1)
+		Game.change_scene("home-interior", Vector2(-31, 45.5))
 
 func _on_stop_walking() -> void:
 	$"Player/AnimatedSprite2D".play("idle")

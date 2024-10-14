@@ -167,7 +167,7 @@
 		"prerequisites": [],
 		"text": "I REGRET TO INFORM YOU THAT SOLDIER NO. 87629 DIED IN BATTLE AT APPROXIMATELY 1100 HOURS.",
 		"choices": {},
-		"next": "scene1-pasta-3"
+		"next": "scene1-letter-3"
 	},
 	"scene1-letter-3": {
 		"speaker": "letter",
@@ -181,7 +181,7 @@
 		"prerequisites": [],
 		"text": "SIGNED, ARMY BASE NO. 43, POLARIS DEPARTMENT OF DEFENSE",
 		"choices": {},
-		"next": "scene1-letter-5"
+		"next": ""
 	},
 	
 	"fridge": {
@@ -366,7 +366,7 @@
 			},
 			"second": {
 				"dialogue": "scene1-outside-homeless-guy-deny",
-				"text": "Keep it for yourself",
+				"text": "Sorry",
 			},
 		},
 		"next": ""
