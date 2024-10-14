@@ -34,10 +34,10 @@
 	
 	"telephone" : {
 		"name": "Telephone",
-		"avatar": ""
+		"avatar": "res://assets/sprites/characters/avatars/Mother_Phone.PNG"
 	},
 	"letter" : {
 		"name": "Letter",
-		"avatar": ""
+		"avatar": "res://assets/sprites/characters/avatars/Mother_Letter.PNG"
 	}
 }

@@ -1,5 +1,5 @@
 extends Area2D
-
+class_name Interactable
 signal trigger_player_teleport
 
 @export var interactable_scale: Vector2 = Vector2.ONE

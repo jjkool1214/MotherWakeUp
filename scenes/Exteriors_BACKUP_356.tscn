@@ -6,7 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://rsy40yx81brv" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+=======
+[ext_resource type="PackedScene" uid="uid://yl8qwu7i1nct" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+>>>>>>> 7af1a662881e65c36b7191e4f473ef1f5d73dc16
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
 [ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
@@ -90,8 +94,9 @@ volume_db = -6.37
 autoplay = true
 parameters/looping = true
 
+<<<<<<< HEAD
 [node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(172, 55)
+position = Vector2(180, 55)
 dialogue_key = "scene1-outside-banner"
 
 [node name="Interactable" parent="." instance=ExtResource("9_d12ox")]
@@ -100,5 +105,13 @@ interactable_scale = Vector2(2, 1)
 dialogue_key = "scene1-outside-bank"
 
 [node name="Interactable2" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(319, 54)
+position = Vector2(144, 58)
 dialogue_key = "scene1-outside-fast-food-door"
+=======
+[node name="talk to jenkins" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(12, 60)
+dialogue_key = "scene1-outside-homeless-guy"
+
+[node name="Jenkins" parent="." instance=ExtResource("11_gax0g")]
+position = Vector2(13, 58)
+>>>>>>> 7af1a662881e65c36b7191e4f473ef1f5d73dc16

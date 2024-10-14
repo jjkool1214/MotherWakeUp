@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rqadrq5pd8v7"
-path="res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"
+uid="uid://7vk81tlyy3jo"
+path="res://.godot/imported/Mother_Letter.PNG-e318c1e37ccc66e4e14237c57b88ebee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Background/Cave Scenes/cave_middleground.png"
-dest_files=["res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"]
+source_file="res://assets/sprites/characters/avatars/Mother_Letter.PNG"
+dest_files=["res://.godot/imported/Mother_Letter.PNG-e318c1e37ccc66e4e14237c57b88ebee.ctex"]
 
 [params]
 

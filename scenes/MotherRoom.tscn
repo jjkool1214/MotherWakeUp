@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bnhx1mjkb32h8"]
 
 [ext_resource type="Texture2D" uid="uid://cqcxsn8qm2mv" path="res://assets/sprites/physical/home/home_bedroom.png" id="1_20q63"]
-[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="2_jkamh"]
+[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="2_jkamh"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_5ftpu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_45sgn"]

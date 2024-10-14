@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rqadrq5pd8v7"
-path="res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"
+uid="uid://b3xfutueedwdf"
+path="res://.godot/imported/Mother_Phone.PNG-7541016ce390f2e69b0a84b62d94dd98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Background/Cave Scenes/cave_middleground.png"
-dest_files=["res://.godot/imported/cave_middleground.png-bd319869473cae5073faafa1dfd827b8.ctex"]
+source_file="res://assets/sprites/characters/avatars/Mother_Phone.PNG"
+dest_files=["res://.godot/imported/Mother_Phone.PNG-7541016ce390f2e69b0a84b62d94dd98.ctex"]
 
 [params]
 
