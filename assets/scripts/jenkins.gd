@@ -11,8 +11,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	timer -= delta
 	
+	
 	if timer <= 0:
-		$AudioStreamPlayer.play()
+		var distance = abs($"../Player".global_position - $".".global_position)
+		$AudioStreamPlayer.volume_db = - distance.x / 10
+		if distance.x < 100 : 
+			$AudioStreamPlayer.play()
 		timer = 2
 		
 	

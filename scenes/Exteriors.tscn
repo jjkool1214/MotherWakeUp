@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" uid="uid://cfe5yux41hjap" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://yl8qwu7i1nct" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
 [ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
@@ -81,8 +81,8 @@ autoplay = true
 parameters/looping = true
 
 [node name="talk to jenkins" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(-237, 60)
+position = Vector2(12, 60)
 dialogue_key = "scene1-outside-homeless-guy"
 
 [node name="Jenkins" parent="." instance=ExtResource("11_gax0g")]
-position = Vector2(-236, 58)
+position = Vector2(13, 58)
