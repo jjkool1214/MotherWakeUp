@@ -1,3 +1,34 @@
-[gd_scene format=3 uid="uid://dbrllob8ynnxf"]
+[gd_scene load_steps=5 format=3 uid="uid://dbrllob8ynnxf"]
+
+[ext_resource type="Texture2D" uid="uid://ohkrlhly5lc3" path="res://assets/sprites/characters/NPCs/james.png" id="1_8o6xd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ct16"]
+atlas = ExtResource("1_8o6xd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3eqc"]
+atlas = ExtResource("1_8o6xd")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bk1mf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ct16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3eqc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
 
 [node name="James" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_bk1mf")
+autoplay = "default"
+frame_progress = 0.706972
+flip_h = true
