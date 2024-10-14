@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://b852061abfwtl"]
+[gd_scene load_steps=11 format=3 uid="uid://b852061abfwtl"]
 
 [ext_resource type="Script" path="res://assets/scripts/home_interior.gd" id="1_iwma4"]
 [ext_resource type="Texture2D" uid="uid://slf44x2r5u2n" path="res://assets/sprites/physical/home/Home_Interior.PNG" id="1_y4meq"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="2_g8xok"]
-[ext_resource type="PackedScene" path="res://scenes/Mother.tscn" id="3_bo6of"]
-[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="4_duu6v"]
+[ext_resource type="PackedScene" uid="uid://c0pgas7vcrk5d" path="res://scenes/Mother.tscn" id="3_bo6of"]
+[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="4_duu6v"]
+[ext_resource type="PackedScene" uid="uid://cui6ixcb3s7nc" path="res://scenes/world objects/Letter.tscn" id="6_22wkk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfgj0"]
 size = Vector2(322.667, 1.25)
@@ -46,12 +47,6 @@ position = Vector2(-90.25, -42)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_jw7xe")
 
-[node name="Player" parent="." instance=ExtResource("2_g8xok")]
-position = Vector2(109, 42)
-
-[node name="Mother" parent="." instance=ExtResource("3_bo6of")]
-position = Vector2(-290, 45)
-
 [node name="ExitDoor" parent="." instance=ExtResource("4_duu6v")]
 position = Vector2(109, 30)
 interactable_scale = Vector2(1.5, 2)
@@ -73,3 +68,18 @@ dialogue_key = "fridge"
 position = Vector2(-90, 18)
 interactable_scale = Vector2(4, 3)
 dialogue_key = "portrait"
+
+[node name="Letter" parent="." instance=ExtResource("6_22wkk")]
+visible = false
+position = Vector2(72, 40.6)
+
+[node name="OpenLetter" parent="." instance=ExtResource("4_duu6v")]
+position = Vector2(74, 43)
+interactable_scale = Vector2(0.5, 1)
+dialogue_key = "scene1-letter-1"
+
+[node name="Mother" parent="." instance=ExtResource("3_bo6of")]
+position = Vector2(-290, 45)
+
+[node name="Player" parent="." instance=ExtResource("2_g8xok")]
+position = Vector2(109, 42)

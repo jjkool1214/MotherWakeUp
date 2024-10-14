@@ -5,9 +5,9 @@ extends StaticBody2D
 func _ready() -> void:	
 	dialogue.trigger_dialogue_started.connect(_on_dialogue_started)
 	
-	if Game.cutscenes.is_empty():
+	if "intro" not in Game.cutscenes:
 		intro_cutscene()
-	elif "intro" in Game.cutscenes:
+	elif "letter" not in Game.cutscenes:
 		$Mother.position = Vector2(-92, 45.5)
 		letter_cutscene()
 
@@ -22,6 +22,7 @@ func letter_cutscene() -> void:
 	Game.cutscenes.append("letter")
 	Game.in_cutscene = true
 	$"Player/AnimatedSprite2D".flip_h = true
+	$Letter.visible = true
 	dialogue.start_dialogue("scene1-pasta-1")
 
 func _on_dialogue_started(key: String) -> void:
@@ -31,6 +32,16 @@ func _on_dialogue_started(key: String) -> void:
 		var tween: Tween = create_tween()
 		tween.tween_property($Player, "position", Vector2(-31, 45.5), 3)
 		tween.finished.connect(_on_stop_walking)
+	elif key == "scene1-pasta-7":
+		$Mother.flip_h = false
+		var tween: Tween = create_tween()
+		tween.tween_property($Mother, "position", Vector2(-303, 45.5), 5)
+		await dialogue.trigger_dialogue_over
+		$Fridge.enabled = false
+		$Portrait.enabled = false
+		$BedroomDoor.enabled = false
+		$ExitDoor.enabled = false
+		Game.in_cutscene = false
 
 func _on_stop_walking() -> void:
 	$"Player/AnimatedSprite2D".play("idle")

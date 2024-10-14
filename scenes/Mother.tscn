@@ -1,20 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0pgas7vcrk5d"]
+[gd_scene load_steps=2 format=3 uid="uid://c0pgas7vcrk5d"]
 
-[ext_resource type="Script" path="res://scenes/mother.gd" id="1_ks1tn"]
 [ext_resource type="Texture2D" uid="uid://billbi1er2rvu" path="res://assets/sprites/characters/NPCs/mother.png" id="1_wisno"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kx21f"]
-size = Vector2(8, 18)
-
-[node name="Mother" type="CharacterBody2D"]
-script = ExtResource("1_ks1tn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1.5)
-scale = Vector2(1.5, 1.5)
-shape = SubResource("RectangleShape2D_kx21f")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Mother" type="Sprite2D"]
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_wisno")
 flip_h = true
