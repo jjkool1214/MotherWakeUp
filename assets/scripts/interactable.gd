@@ -27,6 +27,7 @@ func _process(_delta: float) -> void:
 		Game.change_scene(target_scene, target_position)
 
 func _on_body_entered(body: Node2D) -> void:
+	print($"../Player/Camera2D/Dialogue")
 	if not body.name == "Player" or not $"../Player/Camera2D/Dialogue".active_dialogue.is_empty() or not enabled:
 		return
 		

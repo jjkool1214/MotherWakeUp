@@ -16,6 +16,7 @@ func _ready() -> void:
 	speakers = import_speakers()
 	all_dialogue = import_all_dialogue()
 	reset()
+	$Voices.stream = load("res://assets/SFX/talking.mp3")
 	
 func _process(delta: float) -> void:
 	if len(active_dialogue) == 0:
@@ -30,6 +31,7 @@ func _process(delta: float) -> void:
 	if active_dialogue["next"].is_empty():
 		trigger_dialogue_over.emit(active_dialogue_key)
 		reset()
+		$Voices.stop()
 		return
 	
 	if not $Text.visible_ratio == 1:
@@ -78,13 +80,9 @@ func start_dialogue(key: String) -> bool:
 	
 	$AvatarFrame.visible = true
 	$Avatar.texture = load(speaker["avatar"])
-	
-	var path = "res://assets/SFX/voices/" + speaker["name"] + ".mp3"
-	$"../../Voices".stream = load(path)
-	$"../../Voices".play()
-	
 	$TextFrame.visible = true
 	$ButtonHint.visible = true
+	$Voices.play()
 	set_text(dialogue["text"])
 	
 	if len(dialogue["choices"]) == 2:
@@ -103,6 +101,10 @@ func set_text(text: String) -> void:
 	$Text.text = text
 	var tween: Tween = create_tween()
 	tween.tween_property($Text, "visible_ratio", 1.0, 2)
+	tween.finished.connect(_on_text_appeared)
+	
+func _on_text_appeared() -> void:
+	$Voices.stop()
 
 func _on_choice_1_pressed() -> void:
 	if choice_1.is_empty():

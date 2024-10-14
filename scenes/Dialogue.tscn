@@ -89,5 +89,10 @@ icon = ExtResource("3_jqdek")
 flat = true
 icon_alignment = 1
 
+[node name="Voices" type="AudioStreamPlayer" parent="."]
+volume_db = -15.0
+pitch_scale = 0.5
+autoplay = true
+
 [connection signal="pressed" from="Choice1" to="." method="_on_choice_1_pressed"]
 [connection signal="pressed" from="Choice2" to="." method="_on_choice_2_pressed"]

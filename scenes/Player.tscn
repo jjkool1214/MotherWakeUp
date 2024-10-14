@@ -87,6 +87,3 @@ collision_layer = 3
 [node name="Interactable Collider" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -4.76837e-07)
 shape = SubResource("RectangleShape2D_tksab")
-
-[node name="Voices" type="AudioStreamPlayer" parent="."]
-autoplay = true

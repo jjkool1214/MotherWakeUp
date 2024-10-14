@@ -79,7 +79,7 @@ interactable_scale = Vector2(0.5, 1)
 dialogue_key = "scene1-letter-1"
 
 [node name="Mother" parent="." instance=ExtResource("3_bo6of")]
-position = Vector2(-290, 45)
+position = Vector2(-290, 45.5)
 
 [node name="Player" parent="." instance=ExtResource("2_g8xok")]
 position = Vector2(109, 42)
