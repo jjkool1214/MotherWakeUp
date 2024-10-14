@@ -366,7 +366,7 @@
 				"text": "Spare $5",
 			},
 			"second": {
-				"dialogue": "",
+				"dialogue": "scene1-outside-homeless-guy-deny",
 				"text": "Keep it for yourself",
 			},
 		},
@@ -394,7 +394,7 @@
 		"next": "scene1-outside-homeless-guy-deny2"
 	},
 	"scene1-outside-homeless-guy-deny2": {
-		"speaker": "pandora",
+		"speaker": "jenkins",
 		"prerequisites": [],
 		"text": "Gee, I understand. Take care...",
 		"choices": {},
@@ -415,11 +415,389 @@
 		"choices": {},
 		"next": ""
 	},
-	
-	"scene1-ryans-home": {
+	"scene1-outside-clock": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "",
+		"text": "Phew, just on time. mom would be proud. A quick 12-hour shift, and I'll be done in no time.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-closed-sign": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I can't forget to flip that once I open up. The last two timnes, I've forgotten.",
+		"choices": {},
+		"next": "scene1-outside-closed-sign2"
+	},
+	"scene1-outside-closed-sign2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "... I guess there's just been a ot on my mind.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-dumpster": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "That's my least favorite part of the job. Though, someone has to do it. I'm sure Ryan appreciates it.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-sydney": {
+		"speaker": "sydney",
+		"prerequisites": [],
+		"text": "Don't you worry, honey, it's just sandwiches after all!",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-james": {
+		"speaker": "james",
+		"prerequisites": [],
+		"text": "I've been waiting here for MANY minutes. What's the hold up?",
+		"choices": {},
+		"next": "scene1-outside-james2"
+	},
+	"scene1-outside-james2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Sir, we are just about to open.",
+		"choices": {},
+		"next": "scene1-outside-james3"
+	},
+	"scene1-outside-james3": {
+		"speaker": "james",
+		"prerequisites": [],
+		"text": "Yeah, whateva...",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-julie": {
+		"speaker": "julie",
+		"prerequisites": [],
+		"text": "Um... excuse me... when do you open?",
+		"choices": {},
+		"next": "scene1-outside-julie2"
+	},
+	"scene1-outside-julie2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Hi little lady! We're opening any minute now.",
+		"choices": {},
+		"next": "scene1-outside-julie3"
+	},
+	"scene1-outside-julie3": {
+		"speaker": "james",
+		"prerequisites": [],
+		"text": "Why are you talking to my kid? Just do your job, okay?",
+		"choices": {},
+		"next": "scene1-outside-julie4"
+	},
+	"scene1-outside-julie4": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Well, she only- okay, sir...",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-ryan": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "Something on your mind kiddo? I know that was quite a shift.",
+		"choices": {},
+		"next": "scene1-ryan2"
+	},
+	"scene1-ryan2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "No, well... work was fine. It's... it's just my mom. She's been acting...",
+		"choices": {},
+		"next": "scene1-ryan3"
+	},
+	"scene1-ryan3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Different",
+		"choices": {},
+		"next": "scene1-ryan4"
+	},
+	"scene1-ryan4": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "Different, how?",
+		"choices": {},
+		"next": "scene1-ryan5"
+	},
+	"scene1-ryan5": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "It's as if she has no life anymore. Her trauma has taken over everything...",
+		"choices": {},
+		"next": "scene1-ryan6"
+	},
+	"scene1-ryan6": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "...her eating, her sleeping...",
+		"choices": {},
+		"next": "scene1-ryan7"
+	},
+	"scene1-ryan7": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "She-she doesn't even respond to me anymore. What should I do??",
+		"choices": {},
+		"next": "scene1-ryan8"
+	},
+	"scene1-ryan8": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "Jeez, kiddo. I had no idea.",
+		"choices": {},
+		"next": "scene1-ryan9"
+	},
+	"scene1-ryan9": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "I'll tell ya what, take the next few days off, okay? When I was going through a rough time, some pills never hurt anyone.",
+		"choices": {},
+		"next": "scene1-ryan10"
+	},
+	"scene1-ryan10": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "Have you given 'em a try?",
+		"choices": {},
+		"next": "scene1-ryan11"
+	},
+	"scene1-ryan11": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "No... I haven't. Is that what she needs right now?",
+		"choices": {},
+		"next": "scene1-ryan12"
+	},
+	"scene1-ryan12": {
+		"speaker": "ryan",
+		"prerequisites": [],
+		"text": "Kiddo, I'm sure it's better than nothing.",
+		"choices": {},
+		"next": "scene1-ryan13"
+	},
+	"scene1-ryan13": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Maybe you're right. Thanks, Ryan. I guess I'll head to the pharmacy tonight.",
+		"choices": {},
+		"next": "scene1-ryan14"
+	},
+	
+	"scene1-construction": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Great, guess I'll have to find another way home after the pharmacy.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-outside-train-banner": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "'QUIK INC. UP 12% FOLLOWING DEBUT OF NEW TRANSPORTATION INFRASTRUCTURE'... pftt, wish we could get some of that.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-ticket-booth": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Maybe it'd be easier to just escape this place...",
+		"choices": {},
+		"next": "scene1-outside-ticket-booth2"
+	},
+	"scene1-outside-ticket-booth2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Kidding.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-outside-mothers-day": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "'CELEBRATE MOMS EVERYWHERE, COME ON DOWN TO HOMEIFY FOR 50% OFF ON MOTHER'S DAY'... how could I forget? Was that today?",
+		"choices": {},
+		"next": "scene1-outside-mothers-day2"
+	},
+	"scene1-outside-mothers-day2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "More the reason to help mom out with these pills.",
+		"choices": {},
+		"next": ""
+	},
+	
+	
+	"scene1-cave-intro": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Where... where am I? Is this a cave?",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-cave-hole": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I'll need to find a way back up eventually...",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-cave-stone": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I... I see my mother. She's...",
+		"choices": {},
+		"next": "scene1-cave-stone"
+	},
+	"scene1-cave-stone2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Happy? What, what is this? And... I see Ryan's Deli. She's there and working like it was before.",
+		"choices": {},
+		"next": "scene1-cave-stone3"
+	},
+	"scene1-cave-stone3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "This could be the cure... after all this time. I=I'll have my mother back.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-cave-pickup": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Wow, it's much heavier than I thought.",
+		"choices": {},
+		"next": "scene1-cave-pickup2"
+	},
+	"scene1-cave-pickup2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I feel... relieved. I can't even remember what I was worrying about.",
+		"choices": {},
+		"next": "scene1-cave-pickup3"
+	},
+	"scene1-cave-pickup3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Oh, right, my mom. Maybe she'll feel the same from this stone, too.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-cave-other-stones": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Those must be more of the stones! I'll have to come back another time for them.",
+		"choices": {},
+		"next": ""
+	},
+	"scene1-cave-vine": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Maybe I could use this to get out of here?",
+		"choices": {},
+		"next": "scene1-cave-vine2"
+	},
+	"scene1-cave-vine2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "To think that my mom might be healing by the morning... I've missed her smile, her laugh...",
+		"choices": {},
+		"next": "scene1-cave-vine3"
+	},
+	"scene1-cave-vine3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "... her love for me. her life is no way to live right now, that's for sure.",
+		"choices": {},
+		"next": "scene1-cave-vine4"
+	},
+	"scene1-cave-vine4": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Thank goodness I found that vine, though. I can finally get back home.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-home": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Mom I-I think I found something to help you.",
+		"choices": {},
+		"next": "scene1-home2"
+	},
+	"scene1-home2": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "(murmurs)",
+		"choices": {},
+		"next": "scene1-home3"
+	},
+	"scene1-home3": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I found this odd stone on the way back home from the deli today. It made me feel... better.",
+		"choices": {},
+		"next": "scene1-home4"
+	},
+	"scene1-home4": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Mom?",
+		"choices": {},
+		"next": "scene1-home5"
+	},
+	"scene1-home5": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Please take it... I know how crazy this sounds. Trust me, I know I sound crazy. I just...",
+		"choices": {},
+		"next": "scene1-home6"
+	},
+	"scene1-home6": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "... care so much. I want you to be happy and yourself again.",
+		"choices": {},
+		"next": "scene1-home7"
+	},
+	"scene1-home7": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "There's nothing to do, just get to bed.",
+		"choices": {},
+		"next": ""
+	},
+	
+	"scene1-bed": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "I just want your pain to go away. Is that too much to ask for? I'm leaving the stone here.",
+		"choices": {},
+		"next": "scene1-bed2"
+	},
+	"scene1-bed2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "Just don't skip breakfast tomorrow. You have to eat, mom. You have to.",
+		"choices": {},
+		"next": "scene1-bed3"
+	},
+	"scene1-bed3": {
+		"speaker": "mother",
+		"prerequisites": [],
+		"text": "(murmurs)",
 		"choices": {},
 		"next": ""
 	},
