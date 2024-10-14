@@ -1,22 +1,25 @@
-[gd_scene load_steps=8 format=3 uid="uid://b852061abfwtl"]
+[gd_scene load_steps=10 format=3 uid="uid://b852061abfwtl"]
 
+[ext_resource type="Script" path="res://assets/scripts/home_interior.gd" id="1_iwma4"]
 [ext_resource type="Texture2D" uid="uid://slf44x2r5u2n" path="res://assets/sprites/physical/home/Home_Interior.PNG" id="1_y4meq"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="2_g8xok"]
-[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="4_duu6v"]
+[ext_resource type="PackedScene" path="res://scenes/Mother.tscn" id="3_bo6of"]
+[ext_resource type="PackedScene" uid="uid://6g0brp7s474o" path="res://scenes/Interactable.tscn" id="4_duu6v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfgj0"]
 size = Vector2(322.667, 1.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_adrjr"]
-size = Vector2(1, 67)
+size = Vector2(1.16666, 67)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xcal4"]
-size = Vector2(1, 67)
+size = Vector2(1.16666, 67)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jw7xe"]
-size = Vector2(322, 1)
+size = Vector2(322.333, 1)
 
 [node name="HomeInterior" type="StaticBody2D"]
+script = ExtResource("1_iwma4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-92, 8)
@@ -29,22 +32,25 @@ scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_nfgj0")
 
 [node name="right" type="CollisionShape2D" parent="."]
-position = Vector2(149, 8)
+position = Vector2(148.875, 8)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_adrjr")
 
 [node name="left" type="CollisionShape2D" parent="."]
-position = Vector2(-333, 9)
+position = Vector2(-332.875, 9)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_xcal4")
 
 [node name="top" type="CollisionShape2D" parent="."]
-position = Vector2(-90, -42)
+position = Vector2(-90.25, -42)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_jw7xe")
 
 [node name="Player" parent="." instance=ExtResource("2_g8xok")]
 position = Vector2(109, 42)
+
+[node name="Mother" parent="." instance=ExtResource("3_bo6of")]
+position = Vector2(-290, 45)
 
 [node name="ExitDoor" parent="." instance=ExtResource("4_duu6v")]
 position = Vector2(109, 30)

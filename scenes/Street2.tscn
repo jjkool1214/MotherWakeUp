@@ -458,6 +458,7 @@ frame_progress = 0.389464
 [node name="Train Tracks" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -19)
 sprite_frames = SubResource("SpriteFrames_p4e8h")
+autoplay = "default"
 frame_progress = 0.186778
 
 [node name="Pharmacy" type="AnimatedSprite2D" parent="."]
