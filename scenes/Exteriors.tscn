@@ -1,31 +1,54 @@
-[gd_scene load_steps=17 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=18 format=3 uid="uid://b8b2oa4h50baa"]
 
 [ext_resource type="Texture2D" uid="uid://kd01hnl2wrap" path="res://assets/sprites/background/background_stage1.png" id="1_ipgou"]
+[ext_resource type="Script" path="res://assets/scripts/exteriors.gd" id="1_uq1w1"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_fa37f"]
 [ext_resource type="PackedScene" uid="uid://davsifgg8iff6" path="res://scenes/Street1.tscn" id="4_kcfog"]
 [ext_resource type="PackedScene" uid="uid://cg8v4up1lmtf" path="res://scenes/Land01.tscn" id="4_q0e7q"]
 [ext_resource type="PackedScene" uid="uid://pybm2h7deovi" path="res://scenes/Land03.tscn" id="5_heubk"]
-[ext_resource type="PackedScene" uid="uid://cfe5yux41hjap" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
+[ext_resource type="PackedScene" uid="uid://rsy40yx81brv" path="res://scenes/RyansDeli.tscn" id="7_ub8mj"]
 [ext_resource type="PackedScene" uid="uid://pta033qeffut" path="res://scenes/Street2.tscn" id="8_8b8k0"]
 [ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="9_d12ox"]
 [ext_resource type="AudioStream" uid="uid://b0iixbgvpigb2" path="res://assets/SFX/City_v3.mp3" id="10_n303h"]
 [ext_resource type="PackedScene" path="res://scenes/Ryan.tscn" id="10_xjc0u"]
-[ext_resource type="PackedScene" uid="uid://dmknc0qedbwa7" path="res://scenes/Jenkins.tscn" id="12_fi7e5"]
-[ext_resource type="PackedScene" uid="uid://by0b3vgystbiw" path="res://scenes/Sydney.tscn" id="13_a77mt"]
+[ext_resource type="PackedScene" path="res://scenes/Jenkins.tscn" id="12_fi7e5"]
+[ext_resource type="PackedScene" path="res://scenes/Sydney.tscn" id="13_a77mt"]
 [ext_resource type="PackedScene" uid="uid://dbrllob8ynnxf" path="res://scenes/James.tscn" id="14_756v7"]
-[ext_resource type="PackedScene" uid="uid://bmjmftddh8vqp" path="res://scenes/Julie.tscn" id="15_lrbrh"]
+[ext_resource type="PackedScene" path="res://scenes/Julie.tscn" id="15_lrbrh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
 
 [node name="Exteriors" type="Node2D"]
+script = ExtResource("1_uq1w1")
 
 [node name="Street1" parent="." instance=ExtResource("4_kcfog")]
 position = Vector2(186, 50)
 
 [node name="Street2" parent="." instance=ExtResource("8_8b8k0")]
 position = Vector2(946, 22)
+
+[node name="RightBarrierInteract" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(-533, 57)
+dialogue_key = "dont-jump"
+
+[node name="Right Barrier" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Barrier"]
+position = Vector2(-530.75, 57)
+shape = SubResource("RectangleShape2D_qkh6a")
+
+[node name="LeftBarrierInteract" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(1361, 57)
+dialogue_key = "dont-jump"
+
+[node name="Left Barrier" type="StaticBody2D" parent="."]
+position = Vector2(1889, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Barrier"]
+position = Vector2(-530.75, 57)
+shape = SubResource("RectangleShape2D_qkh6a")
 
 [node name="Home" parent="." instance=ExtResource("2_36t4s")]
 position = Vector2(-341, 31)
@@ -37,8 +60,67 @@ interactable_scale = Vector2(1, 2)
 target_scene = "home-interior"
 target_position = Vector2(109, 42)
 
+[node name="HomeWindow" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(-323, 46)
+interactable_scale = Vector2(1, 2)
+dialogue_key = "scene1-outside-home-window"
+
 [node name="RyansDeli" parent="." instance=ExtResource("7_ub8mj")]
 position = Vector2(573, 25)
+
+[node name="TalkToRyan" parent="." instance=ExtResource("9_d12ox")]
+visible = false
+position = Vector2(467, 58)
+scale = Vector2(1.5, 1.5)
+target_position = Vector2(400, 400)
+
+[node name="Ryan" parent="." instance=ExtResource("10_xjc0u")]
+visible = false
+position = Vector2(467, 58)
+scale = Vector2(1.5, 1.5)
+
+[node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(172, 55)
+dialogue_key = "scene1-outside-banner"
+
+[node name="BankDoor" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(57, 54)
+interactable_scale = Vector2(2, 1)
+dialogue_key = "scene1-outside-bank"
+
+[node name="FastFoodDoor" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(319, 54)
+dialogue_key = "scene1-outside-fast-food-door"
+
+[node name="TalkToJenkins" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(-11, 60)
+dialogue_key = "scene1-outside-homeless-guy"
+
+[node name="Jenkins" parent="." instance=ExtResource("12_fi7e5")]
+position = Vector2(-11, 57)
+
+[node name="TalkToSydney" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(461, 60)
+dialogue_key = "scene1-outside-sydney"
+
+[node name="Sydney" parent="." instance=ExtResource("13_a77mt")]
+position = Vector2(462, 58)
+
+[node name="TalkToJames" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(604, 57)
+interactable_scale = Vector2(0.5, 1)
+dialogue_key = "scene1-outside-james"
+
+[node name="James" parent="." instance=ExtResource("14_756v7")]
+position = Vector2(604, 55)
+
+[node name="TalkToJulie" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(630, 53)
+interactable_scale = Vector2(0.5, 1)
+dialogue_key = "scene1-outside-julie"
+
+[node name="Julie" parent="." instance=ExtResource("15_lrbrh")]
+position = Vector2(630, 55)
 
 [node name="Player" parent="." instance=ExtResource("3_fa37f")]
 position = Vector2(-211, 55)
@@ -63,83 +145,12 @@ position = Vector2(229, 154)
 [node name="LandStreet2" parent="." instance=ExtResource("5_heubk")]
 position = Vector2(976, 154)
 
-[node name="RightBarrierInteract" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(-533, 57)
-dialogue_key = "dont-jump"
-
-[node name="Right Barrier" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Barrier"]
-position = Vector2(-530.75, 57)
-shape = SubResource("RectangleShape2D_qkh6a")
-
-[node name="LeftBarrierInteract" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(1361, 57)
-dialogue_key = "dont-jump"
-
-[node name="Left Barrier" type="StaticBody2D" parent="."]
-position = Vector2(1889, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Barrier"]
-position = Vector2(-530.75, 57)
-shape = SubResource("RectangleShape2D_qkh6a")
-
-[node name="TalkToRyan" parent="." instance=ExtResource("9_d12ox")]
-visible = false
-position = Vector2(467, 58)
-scale = Vector2(1.5, 1.5)
-target_position = Vector2(400, 400)
-
-[node name="Ryan" parent="." instance=ExtResource("10_xjc0u")]
-visible = false
-position = Vector2(467, 58)
-scale = Vector2(1.5, 1.5)
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_n303h")
 volume_db = -6.37
 autoplay = true
 parameters/looping = true
 
-[node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(172, 55)
-dialogue_key = "scene1-outside-banner"
-
-[node name="BankDoor" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(57, 54)
-interactable_scale = Vector2(2, 1)
-dialogue_key = "scene1-outside-bank"
-
-[node name="FastFoodDoor" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(319, 54)
-dialogue_key = "scene1-outside-fast-food-door"
-
-[node name="Jenkins" parent="." instance=ExtResource("12_fi7e5")]
-position = Vector2(-11, 57)
-
-[node name="talk-to-jenkins" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(-11, 60)
-dialogue_key = "scene1-outside-homeless-guy"
-
-[node name="Sydney" parent="." instance=ExtResource("13_a77mt")]
-position = Vector2(548, 58)
-
-[node name="talk-to-sydney" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(548, 60)
-dialogue_key = "scene1-outside-sydney"
-
-[node name="talk-to-james" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(604, 60)
-interactable_scale = Vector2(0.5, 1)
-dialogue_key = "scene1-outside-james"
-
-[node name="James" parent="." instance=ExtResource("14_756v7")]
-position = Vector2(604, 58)
-
-[node name="talk-to-julie" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(628, 60)
-interactable_scale = Vector2(0.5, 1)
-dialogue_key = "scene1-outside-julie"
-
-[node name="Julie" parent="." instance=ExtResource("15_lrbrh")]
-position = Vector2(628, 59)
+[node name="Dumpster" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(490, 59)
+dialogue_key = "scene1-outside-dumpster"

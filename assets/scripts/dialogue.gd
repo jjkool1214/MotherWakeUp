@@ -109,7 +109,6 @@ func _on_text_appeared() -> void:
 func _on_choice_1_pressed() -> void:
 	if choice_1.is_empty():
 		return
-	print(choice_1["dialogue"])
 	start_dialogue(choice_1["dialogue"])
 
 func _on_choice_2_pressed() -> void:
