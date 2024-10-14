@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b8b2oa4h50baa"]
+[gd_scene load_steps=23 format=3 uid="uid://b8b2oa4h50baa"]
 
 [ext_resource type="Script" path="res://assets/scripts/exteriors.gd" id="1_uq1w1"]
 [ext_resource type="PackedScene" uid="uid://cvgba3sx5xu3l" path="res://scenes/Home.tscn" id="2_36t4s"]
@@ -18,9 +18,16 @@
 [ext_resource type="PackedScene" uid="uid://dbrllob8ynnxf" path="res://scenes/James.tscn" id="14_756v7"]
 [ext_resource type="PackedScene" path="res://scenes/Julie.tscn" id="15_lrbrh"]
 [ext_resource type="PackedScene" uid="uid://c85713a3ku51h" path="res://scenes/Crack.tscn" id="17_aks2t"]
+[ext_resource type="Texture2D" uid="uid://fv8616j0rgoj" path="res://assets/sprites/background/sign.png" id="19_c6eql"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkh6a"]
 size = Vector2(3.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vpms2"]
+size = Vector2(14, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qrryy"]
+size = Vector2(12, 24)
 
 [node name="Exteriors" type="Node2D"]
 script = ExtResource("1_uq1w1")
@@ -52,6 +59,22 @@ position = Vector2(1889, 0)
 position = Vector2(-530.75, 57)
 shape = SubResource("RectangleShape2D_qkh6a")
 
+[node name="ConstructionSignInteract" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(432, 63)
+enabled = false
+dialogue_key = "scene1-construction"
+
+[node name="ConstructionSign" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(432, 62)
+texture = ExtResource("19_c6eql")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ConstructionSign"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConstructionSign/StaticBody2D"]
+shape = SubResource("RectangleShape2D_vpms2")
+disabled = true
+
 [node name="Home" parent="." instance=ExtResource("2_36t4s")]
 position = Vector2(-341, 31)
 scale = Vector2(1.5, 1.5)
@@ -70,15 +93,14 @@ dialogue_key = "scene1-outside-home-window"
 [node name="RyansDeli" parent="." instance=ExtResource("7_ub8mj")]
 position = Vector2(573, 25)
 
+[node name="RyansDeliSignInteract" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(577, 52)
+dialogue_key = "scene1-outside-closed-sign"
+target_time_of_day = 1
+
 [node name="RyansDeliSign" parent="." instance=ExtResource("7_e6f2n")]
 position = Vector2(577, 52)
 scale = Vector2(0.673913, 0.673913)
-
-[node name="CloseDeli" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(577, 52)
-target_scene = "exteriors"
-target_position = Vector2(551, 55)
-target_time_of_day = 1
 
 [node name="ReadSign" parent="." instance=ExtResource("9_d12ox")]
 position = Vector2(172, 55)
@@ -99,6 +121,10 @@ dialogue_key = "scene1-outside-homeless-guy"
 
 [node name="Jenkins" parent="." instance=ExtResource("12_fi7e5")]
 position = Vector2(-11, 57)
+
+[node name="Dumpster" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(490, 59)
+dialogue_key = "scene1-outside-dumpster"
 
 [node name="TalkToSydney" parent="." instance=ExtResource("9_d12ox")]
 position = Vector2(461, 60)
@@ -156,9 +182,25 @@ volume_db = -6.37
 autoplay = true
 parameters/looping = true
 
-[node name="Dumpster" parent="." instance=ExtResource("9_d12ox")]
-position = Vector2(490, 59)
-dialogue_key = "scene1-outside-dumpster"
-
 [node name="Crack" parent="." instance=ExtResource("17_aks2t")]
 position = Vector2(1069, 78)
+
+[node name="PharmacyBarrierInteract" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(717, 54)
+enabled = false
+dialogue_key = "scene1-outside-home"
+
+[node name="PharmacyBarrier" type="StaticBody2D" parent="."]
+position = Vector2(713, 56)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PharmacyBarrier"]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_qrryy")
+disabled = true
+
+[node name="RyansDeliDoor" parent="." instance=ExtResource("9_d12ox")]
+position = Vector2(526, 50)
+interactable_scale = Vector2(1, 2)
+target_scene = "exteriors"
+target_position = Vector2(550, 55)
+target_time_of_day = 1

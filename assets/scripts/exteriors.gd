@@ -18,6 +18,9 @@ func _ready() -> void:
 		$HomeDoor.dialogue_key = "scene1-outside-home"
 		if Game.time_of_day == Game.TimeOfDay.NIGHT:
 			ryan_advice_cutscene()
+		else:
+			$PharmacyBarrierInteract.enabled = true
+			$"PharmacyBarrier/CollisionShape2D".disabled = false
 	else:
 		$HomeDoor.dialogue_key = ""
 
@@ -26,9 +29,17 @@ func ryan_advice_cutscene() -> void:
 	Game.in_cutscene = true
 	$RyansDeliSign.texture = ryans_deli_sign_open
 	$Ryan.visible = true
+	$TalkToSydney.enabled = false
 	$Sydney.visible = false
+	$TalkToJames.enabled = false
 	$James.visible = false
+	$TakToJulie.enabled = false
 	$Julie.visible = false
+	$ConstructionSignInteract.enabled = true
+	$ConstructionSign.visible = true
+	$ConstructionSign/StaticBody2D/CollisionShape2D.disabled = false
+	$PharmacyBarrierInteract.enabled = false
+	$"PharmacyBarrier/CollisionShape2D".disabled = true
 	dialogue.start_dialogue("scene1-ryan")
 	await dialogue.trigger_dialogue_over
 	$RyansDeliSign.texture = ryans_deli_sign_closed
