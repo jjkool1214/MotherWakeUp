@@ -351,7 +351,14 @@
 	"scene1-outside-fast-food-door": {
 		"speaker": "pandora",
 		"prerequisites": [],
-		"text": "If only I had time to stop for a bite. Mom used to love this place so much.",
+		"text": "Mom used to love this place so much.",
+		"choices": {},
+		"next": "scene1-outside-fast-food-door2"
+	},
+	"scene1-outside-fast-food-door2": {
+		"speaker": "pandora",
+		"prerequisites": [],
+		"text": "It's a shame it got shut down, though. I guess a triple homicide isn't great for resell value...",
 		"choices": {},
 		"next": ""
 	},

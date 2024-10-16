@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://crlgma5lhti8w"]
 
 [ext_resource type="Script" path="res://assets/scripts/player.gd" id="1_diema"]
-[ext_resource type="Texture2D" uid="uid://c81co40g4y1b5" path="res://assets/sprites/characters/Pandora/Pandora_fall.png" id="2_puogd"]
-[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="3_4t1l6"]
-[ext_resource type="Texture2D" uid="uid://cpr5vciy2b5k3" path="res://assets/sprites/characters/Pandora/Pandora_walk.png" id="4_stfxu"]
+[ext_resource type="Texture2D" uid="uid://c81co40g4y1b5" path="res://assets/sprites/characters/pandora_fall.png" id="2_puogd"]
+[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/pandora_idle.png" id="3_4t1l6"]
+[ext_resource type="Texture2D" uid="uid://cpr5vciy2b5k3" path="res://assets/sprites/characters/pandora_walk.png" id="4_stfxu"]
 [ext_resource type="PackedScene" uid="uid://b3ewxa1qc8ckc" path="res://scenes/Dialogue.tscn" id="5_3fwv5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7b6em"]

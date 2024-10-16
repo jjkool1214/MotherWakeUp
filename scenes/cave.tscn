@@ -1,13 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://b53rs7gfmkxvd"]
+[gd_scene load_steps=14 format=3 uid="uid://dn4nrtwfjbda2"]
 
-[ext_resource type="Texture2D" uid="uid://pl5j6aun2dil" path="res://assets/sprites/physical/cave/cave_background.png" id="1_ht6ww"]
+[ext_resource type="Texture2D" path="res://assets/sprites/physical/cave/cave_background.png" id="1_ht6ww"]
 [ext_resource type="PackedScene" uid="uid://chbn3e51s5r2e" path="res://scenes/world objects/Vine.tscn" id="2_vu64c"]
 [ext_resource type="PackedScene" uid="uid://crlgma5lhti8w" path="res://scenes/Player.tscn" id="3_afhki"]
-[ext_resource type="Texture2D" uid="uid://rqadrq5pd8v7" path="res://assets/sprites/background/Cave Scenes/cave_middleground.png" id="6_hgk03"]
+[ext_resource type="Texture2D" uid="uid://rqadrq5pd8v7" path="res://assets/sprites/backgrounds/cave/cave_middleground.png" id="6_hgk03"]
 [ext_resource type="PackedScene" uid="uid://bdmcyflbpeblu" path="res://scenes/world objects/Altar.tscn" id="6_x5s77"]
-[ext_resource type="Texture2D" uid="uid://1dcakgiw04kd" path="res://assets/sprites/background/Cave Scenes/cave_foreground.png" id="7_gjst8"]
+[ext_resource type="Texture2D" uid="uid://1dcakgiw04kd" path="res://assets/sprites/backgrounds/cave/cave_foreground.png" id="7_gjst8"]
 [ext_resource type="PackedScene" uid="uid://kmj38ectyjts" path="res://scenes/world objects/Unakite.tscn" id="7_ydbd0"]
-[ext_resource type="PackedScene" path="res://scenes/Interactable.tscn" id="8_0h4g8"]
+[ext_resource type="PackedScene" uid="uid://ggrw0deemdpr" path="res://scenes/Interactable.tscn" id="8_0h4g8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpwqc"]
 size = Vector2(168, 4.5)

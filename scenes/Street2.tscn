@@ -1,8 +1,8 @@
 [gd_scene load_steps=67 format=3 uid="uid://pta033qeffut"]
 
-[ext_resource type="Texture2D" uid="uid://bw3xj2ku4go20" path="res://assets/sprites/physical/street2/train-station.png" id="1_htweq"]
-[ext_resource type="Texture2D" uid="uid://deecls0evd82h" path="res://assets/sprites/physical/street2/tracks.png" id="2_bi4la"]
-[ext_resource type="Texture2D" uid="uid://dhjf1vu2uit8o" path="res://assets/sprites/physical/street2/pharmacy.png" id="3_yh2cb"]
+[ext_resource type="Texture2D" uid="uid://bw3xj2ku4go20" path="res://assets/sprites/physical/street2/train_station_s1.png" id="1_htweq"]
+[ext_resource type="Texture2D" uid="uid://deecls0evd82h" path="res://assets/sprites/physical/street2/tracks_s1.png" id="2_bi4la"]
+[ext_resource type="Texture2D" uid="uid://dhjf1vu2uit8o" path="res://assets/sprites/physical/street2/pharmacy_s1.png" id="3_yh2cb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n6qas"]
 atlas = ExtResource("1_htweq")

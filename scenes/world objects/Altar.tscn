@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bdmcyflbpeblu"]
 
-[ext_resource type="Texture2D" uid="uid://xkppwaoy8i3r" path="res://assets/sprites/physical/world_objects/altar.png" id="1_30gfp"]
+[ext_resource type="Texture2D" uid="uid://xkppwaoy8i3r" path="res://assets/sprites/physical/objects/altar.png" id="1_30gfp"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_neevo"]
 blend_mode = 1

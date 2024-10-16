@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bqdc57mqoivg1"]
 
-[ext_resource type="Texture2D" uid="uid://defdbtuhgr62t" path="res://assets/sprites/physical/world_objects/ryans_deli_sign_closed.png" id="1_r3100"]
+[ext_resource type="Texture2D" uid="uid://defdbtuhgr62t" path="res://assets/sprites/physical/objects/ryans_deli_sign_closed.png" id="1_r3100"]
 
 [node name="RyansDeliSign" type="Sprite2D"]
 texture = ExtResource("1_r3100")

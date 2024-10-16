@@ -1,14 +1,14 @@
 [gd_scene load_steps=132 format=3 uid="uid://davsifgg8iff6"]
 
 [ext_resource type="Texture2D" uid="uid://lecwodj3kp18" path="res://assets/sprites/physical/street1/bank.png" id="1_hy0gj"]
-[ext_resource type="Texture2D" uid="uid://dalftg67ep6gu" path="res://assets/sprites/physical/world_objects/billboard.png" id="1_sbsbx"]
-[ext_resource type="Texture2D" uid="uid://b0dmqytnxj2c0" path="res://assets/sprites/physical/street1/coffee-shop.png" id="2_ejro6"]
-[ext_resource type="Texture2D" uid="uid://d3vbn1fpx48dy" path="res://assets/sprites/physical/street1/holo-burger.png" id="3_lawfx"]
-[ext_resource type="Texture2D" uid="uid://cuulljpjfb2ov" path="res://assets/sprites/physical/world_objects/trash-1.png" id="5_ir8qr"]
-[ext_resource type="Texture2D" uid="uid://l18cfx8gl8iv" path="res://assets/sprites/physical/world_objects/trash-2.png" id="6_fehij"]
-[ext_resource type="Texture2D" uid="uid://ccppfra8l2qi4" path="res://assets/sprites/physical/world_objects/street-bed.png" id="7_x547j"]
-[ext_resource type="Texture2D" uid="uid://c24ir3iejvbal" path="res://assets/sprites/physical/world_objects/trash-3.png" id="8_sx4ga"]
-[ext_resource type="Texture2D" uid="uid://coi48cvl16tve" path="res://assets/sprites/physical/world_objects/car-1.png" id="9_3wx0i"]
+[ext_resource type="Texture2D" uid="uid://dalftg67ep6gu" path="res://assets/sprites/physical/objects/billboard.png" id="1_sbsbx"]
+[ext_resource type="Texture2D" uid="uid://b0dmqytnxj2c0" path="res://assets/sprites/physical/street1/coffee_shop_s1.png" id="2_ejro6"]
+[ext_resource type="Texture2D" uid="uid://d3vbn1fpx48dy" path="res://assets/sprites/physical/street1/holo_burger_s1.png" id="3_lawfx"]
+[ext_resource type="Texture2D" uid="uid://cuulljpjfb2ov" path="res://assets/sprites/physical/objects/trash_1.png" id="5_ir8qr"]
+[ext_resource type="Texture2D" uid="uid://l18cfx8gl8iv" path="res://assets/sprites/physical/objects/trash_2.png" id="6_fehij"]
+[ext_resource type="Texture2D" uid="uid://ccppfra8l2qi4" path="res://assets/sprites/physical/objects/street_bed.png" id="7_x547j"]
+[ext_resource type="Texture2D" uid="uid://c24ir3iejvbal" path="res://assets/sprites/physical/objects/trash_3.png" id="8_sx4ga"]
+[ext_resource type="Texture2D" uid="uid://coi48cvl16tve" path="res://assets/sprites/physical/objects/car.png" id="9_3wx0i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l45mq"]
 atlas = ExtResource("1_sbsbx")
@@ -725,43 +725,43 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i2ktb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlpmv"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(0, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ytcq6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fre0"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(45, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0120m"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3va7"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(90, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pkmpl"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmsru"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(135, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8m30r"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwvig"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(180, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_apq2x"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3uns"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(225, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5duuo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifexg"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(270, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mm8wg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qcu6"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(315, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_brfsn"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_smnqx"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(360, 0, 45, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y88mo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_assvk"]
 atlas = ExtResource("2_ejro6")
 region = Rect2(405, 0, 45, 84)
 
@@ -769,34 +769,34 @@ region = Rect2(405, 0, 45, 84)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i2ktb")
+"texture": SubResource("AtlasTexture_mlpmv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ytcq6")
+"texture": SubResource("AtlasTexture_0fre0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0120m")
+"texture": SubResource("AtlasTexture_g3va7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pkmpl")
+"texture": SubResource("AtlasTexture_jmsru")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8m30r")
+"texture": SubResource("AtlasTexture_pwvig")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_apq2x")
+"texture": SubResource("AtlasTexture_n3uns")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5duuo")
+"texture": SubResource("AtlasTexture_ifexg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mm8wg")
+"texture": SubResource("AtlasTexture_0qcu6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_brfsn")
+"texture": SubResource("AtlasTexture_smnqx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y88mo")
+"texture": SubResource("AtlasTexture_assvk")
 }],
 "loop": true,
 "name": &"default",

@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://b3ewxa1qc8ckc"]
 
 [ext_resource type="Script" path="res://assets/scripts/dialogue.gd" id="1_qq3t6"]
-[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="2_yi2l8"]
-[ext_resource type="Texture2D" uid="uid://cklf61w4o2f15" path="res://assets/sprites/ui/text_box.png" id="3_jqdek"]
+[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/pandora_idle.png" id="2_yi2l8"]
+[ext_resource type="Texture2D" uid="uid://cklf61w4o2f15" path="res://assets/sprites/ui/dialogue_box.png" id="3_jqdek"]
 [ext_resource type="Texture2D" uid="uid://djd81ykwyny3r" path="res://assets/sprites/ui/avatar_box.png" id="3_wsqv1"]
 [ext_resource type="Texture2D" uid="uid://cla55o6wx2ql4" path="res://assets/sprites/ui/dialog_button_hint.png" id="5_jl03q"]
 

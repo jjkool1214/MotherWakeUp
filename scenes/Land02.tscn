@@ -1,9 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bal2l4ts86q2y"]
 
-[ext_resource type="Texture2D" uid="uid://6dnel31x017f" path="res://assets/sprites/physical/land02.png" id="1_r8ebe"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_65h13"]
-size = Vector2(128, 3)
+[ext_resource type="Texture2D" uid="uid://6dnel31x017f" path="res://assets/sprites/backgrounds/exteriors/land02.png" id="1_r8ebe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dujr"]
 atlas = ExtResource("1_r8ebe")
@@ -20,14 +17,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Land02" type="StaticBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_65h13"]
+size = Vector2(128, 1.9)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -11.5)
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_65h13")
+[node name="Land02" type="StaticBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 23)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_c3rmh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_65h13")

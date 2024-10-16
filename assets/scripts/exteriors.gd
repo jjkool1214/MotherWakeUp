@@ -1,11 +1,11 @@
 extends Node2D
 
 @onready var dialogue: Dialogue = $"Player/Camera2D/Dialogue"
-var day_background: Resource = preload("res://assets/sprites/background/background_morning.jpg")
-var night_background: Resource = preload("res://assets/sprites/background/background_stage1.png")
+var day_background: Resource = preload("res://assets/sprites/backgrounds/exteriors/background_morning.jpg")
+var night_background: Resource = preload("res://assets/sprites/backgrounds/exteriors/background_s1.png")
 
-var ryans_deli_sign_closed: Resource = preload("res://assets/sprites/physical/world_objects/ryans_deli_sign_closed.png")
-var ryans_deli_sign_open: Resource = preload("res://assets/sprites/physical/world_objects/ryans_deli_sign_open.png")
+var ryans_deli_sign_closed: Resource = preload("res://assets/sprites/physical/objects/ryans_deli_sign_closed.png")
+var ryans_deli_sign_open: Resource = preload("res://assets/sprites/physical/objects/ryans_deli_sign_open.png")
 
 func _ready() -> void:
 	match Game.time_of_day:

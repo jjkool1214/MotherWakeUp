@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://dub8iawxpu2y5"]
 
-[ext_resource type="Texture2D" uid="uid://dtwaa4oshortk" path="res://assets/sprites/background/Home Scenes/IMG_2797.PNG" id="1_kf7b7"]
+[ext_resource type="Texture2D" uid="uid://dtwaa4oshortk" path="res://assets/sprites/backgrounds/home/mothers_room.png" id="1_kf7b7"]
 [ext_resource type="Script" path="res://assets/scripts/title.gd" id="1_q12jw"]
-[ext_resource type="Texture2D" uid="uid://fo6sr2l2l1lw" path="res://assets/sprites/background/Logo.png" id="2_io5ma"]
-[ext_resource type="Texture2D" uid="uid://do23iploiwhw7" path="res://assets/sprites/background/Play.png" id="3_8rjrj"]
-[ext_resource type="Texture2D" uid="uid://com87c3na4nox" path="res://assets/sprites/background/exit_Sign.png" id="4_8k0jk"]
-[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/Pandora/Pandora_idle.png" id="5_j0ean"]
+[ext_resource type="Texture2D" uid="uid://fo6sr2l2l1lw" path="res://assets/sprites/ui/logo.png" id="2_io5ma"]
+[ext_resource type="Texture2D" uid="uid://do23iploiwhw7" path="res://assets/sprites/ui/play.png" id="3_8rjrj"]
+[ext_resource type="Texture2D" uid="uid://com87c3na4nox" path="res://assets/sprites/ui/exit.png" id="4_8k0jk"]
+[ext_resource type="Texture2D" uid="uid://bby22pno6vbou" path="res://assets/sprites/characters/pandora_idle.png" id="5_j0ean"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jofmq"]
 atlas = ExtResource("3_8rjrj")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dkv64ywqt03kt"]
 
-[ext_resource type="Texture2D" uid="uid://billbi1er2rvu" path="res://assets/sprites/characters/NPCs/mother.png" id="1_wisno"]
+[ext_resource type="Texture2D" uid="uid://billbi1er2rvu" path="res://assets/sprites/characters/mother.png" id="1_wisno"]
 
 [node name="Mother" type="Sprite2D"]
 scale = Vector2(1.5, 1.5)
